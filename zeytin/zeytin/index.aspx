@@ -20,6 +20,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //font-awesome icons -->
     <!-- js -->
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="CustomJS/jquery-1.11.1.min.js"></script>
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <!-- //js -->
     <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -247,8 +248,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </section>
                 <!-- flexSlider -->
-                <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-                <script defer src="js/jquery.flexslider.js"></script>
+                <link href="CustomCSS/flexSlider.css" rel="stylesheet" type="text/css" media="screen" property="" />
+                
+                <script defer src="CustomJS/flexslider.js"></script>
                 <script type="text/javascript">
                     $(window).load(function () {
                         $('.flexslider').flexslider({
@@ -685,7 +687,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <!-- //footer -->
         <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+        
+        <script src="Scripts/bootstrap.min.js"></script>
         <script>
             $(document).ready(function () {
                 $(".dropdown").hover(
@@ -718,6 +721,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </script>
         <!-- //here ends scrolling icon -->
         <script src="js/minicart.min.js"></script>
+       <script src="CustomJS/minicart.js"></script>
         <script>
             // Mini Cart
             paypal.minicart.render({
