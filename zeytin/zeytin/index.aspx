@@ -1,42 +1,43 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="zeytin.index" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master1.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="zeytin.index" %>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Grocery Store a Ecommerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
-    <!-- for-mobile-apps -->
+<asp:Content ID="Content" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Manav Sipariş</title>
+        <!-- for-mobile-apps -->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!-- //for-mobile-apps -->
-    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="CustomCSS/myStyle.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- font-awesome icons -->
-    <link href="CustomCSS/font.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- //font-awesome icons -->
-    <!-- js -->
-    <script src="CustomJS/jquery-1.11.1.min.js"></script>
-    <script src="Scripts/jquery-3.0.0.min.js"></script>
-    <!-- //js -->
-    <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="CustomJS/moveTop.js"></script>
-    <script type="text/javascript" src="CustomJS/easing.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        <!-- //for-mobile-apps -->
+        <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="CustomCSS/myStyle.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- font-awesome icons -->
+        <link href="CustomCSS/font.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- //font-awesome icons -->
+        <!-- js -->
+        <script src="CustomJS/jquery-1.11.1.min.js"></script>
+        <script src="Scripts/jquery-3.0.0.min.js"></script>
+        <!-- //js -->
+        <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <!-- start-smoth-scrolling -->
+        <script type="text/javascript" src="CustomJS/moveTop.js"></script>
+        <script type="text/javascript" src="CustomJS/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+                });
             });
-        });
-    </script>
-    <!-- start-smoth-scrolling -->
-</head>
+        </script>
+        <!-- start-smoth-scrolling -->
+    </head>
 
 
     <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
@@ -67,110 +68,41 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </script>
     <script>
         (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-30027142-1', 'w3layouts.com');
         ga('send', 'pageview');
     </script>
     <body>
         <!-- header -->
-        <div class="agileits_header">
-            <div class="w3l_offers">
-                <a href="products.html">Today's special Offers !</a>
-            </div>
-            <div class="w3l_search">
-                <form action="#" method="post">
-                    <input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
-                    <input type="submit" value=" ">
-                </form>
-            </div>
-            <div class="product_list_header">
-                <form action="#" method="post" class="last">
-                    <fieldset>
-                        <input type="hidden" name="cmd" value="_cart" />
-                        <input type="hidden" name="display" value="1" />
-                        <input type="submit" name="submit" value="View your cart" class="button" />
-                    </fieldset>
-                </form>
-            </div>
-            <div class="w3l_header_right">
-                <ul>
-                    <li class="dropdown profile_details_drop">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-                        <div class="mega-dropdown-menu">
-                            <div class="w3ls_vegetables">
-                                <ul class="dropdown-menu drp-mnu">
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="login.html">Sign Up</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="w3l_header_right1">
-                <h2><a href="mail.html">Contact Us</a></h2>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <!-- script-for sticky-nav -->
-        <script>
-            $(document).ready(function () {
-                var navoffeset = $(".agileits_header").offset().top;
-                $(window).scroll(function () {
-                    var scrollpos = $(window).scrollTop();
-                    if (scrollpos >= navoffeset) {
-                        $(".agileits_header").addClass("fixed");
-                    } else {
-                        $(".agileits_header").removeClass("fixed");
-                    }
-                });
 
-            });
-        </script>
+        <!-- script-for sticky-nav -->
+
         <!-- //script-for sticky-nav -->
-        <div class="logo_products">
-            <div class="container">
-                <div class="w3ls_logo_products_left">
-                    <h1><a href="index.html"><span>Grocery</span> Store</a></h1>
-                </div>
-                <div class="w3ls_logo_products_left1">
-                    <ul class="special_items">
-                        <li><a href="events.html">Events</a><i>/</i></li>
-                        <li><a href="about.html">About Us</a><i>/</i></li>
-                        <li><a href="products.html">Best Deals</a><i>/</i></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">store@grocery.com</a></li>
-                    </ul>
-                </div>
-                
-                <div class="clearfix"></div>
-            </div>
-        </div>
+
         <!-- //header -->
         <!-- banner -->
         <div class="banner">
-            <div class ="w3l_banner_nav_left">
-            <div class="w3l_fresh_vegetables_grid2">
-                            <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">All Brands</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Vegetables</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Fruits</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="drinks.html">Juices</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="pet.html">Pet Food</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="bread.html">Bread & Bakery</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="household.html">Cleaning</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Spices</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dry Fruits</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dairy Products</a></li>
-                            </ul>
-                        </div>
-                    </div>
-        </div>
+            <div class="w3l_banner_nav_left">
+                <div class="w3l_fresh_vegetables_grid2">
+                    <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">All Brands</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Vegetables</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Fruits</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="drinks.html">Juices</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="pet.html">Pet Food</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="bread.html">Bread & Bakery</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="household.html">Cleaning</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Spices</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dry Fruits</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dairy Products</a></li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="w3l_banner_nav_right">
                 <section class="slider">
                     <div class="flexslider">
@@ -204,7 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </section>
                 <!-- flexSlider -->
                 <link href="CustomCSS/flexSlider.css" rel="stylesheet" type="text/css" media="screen" property="" />
-                
+
                 <script defer src="CustomJS/flexslider.js"></script>
                 <script type="text/javascript">
                     $(window).load(function () {
@@ -218,7 +150,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </script>
                 <!-- //flexSlider -->
             </div>
-            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
         <!---728x90--->
         <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
         <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
@@ -245,7 +178,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </script>
         </div>
         <!-- banner -->
-        
+
         <!---728x90--->
         <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
         <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
@@ -304,15 +237,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-md-3 top_brand_left">
                         <div class="hover14 column">
                             <div class="agile_top_brand_left_grid">
-                               
+
                                 <div class="agile_top_brand_left_grid1">
                                     <figure>
                                         <div class="snipcart-item block">
                                             <div class="snipcart-thumb">
                                                 <a href="single.html">
                                                     <img title=" " alt=" " src="images/1.png" /></a>
-                                                <p style="text-align:center">fortune sunflower oil</p>
-                                                <h4 style="text-align:center">$7.99</h4>
+                                                <p style="text-align: center">fortune sunflower oil</p>
+                                                <h4 style="text-align: center">$7.99</h4>
                                             </div>
                                             <div class="snipcart-details top_brand_home_details">
                                                 <form action="#" method="post">
@@ -341,40 +274,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <!-- //top-brands -->
-      
-        
-       
+
+
+
         <!-- footer -->
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                <div class="col-md-6 w3_footer_grid">
-                    <h3>information</h3>
-                    <ul class="w3_footer_grid_list">
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Best Deals</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="short-codes.html">Short Codes</a></li>
-                    </ul>
-                </div>
-                    <div class="col-md-6 w3_footer_grid">
-                    <h3>policy info</h3>
-                    <ul class="w3_footer_grid_list">
-                        <li><a href="faqs.html">FAQ</a></li>
-                        <li><a href="privacy.html">privacy policy</a></li>
-                        <li><a href="privacy.html">terms of use</a></li>
-                    </ul>
-                </div>
-                    </div>
-                <div class="wthree_footer_copy">
-                    <p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-                </div>
-            </div>
-        </div>
+
         <!-- //footer -->
         <!-- Bootstrap Core JavaScript -->
-        
+
         <script src="Scripts/bootstrap.min.js"></script>
         <script>
             $(document).ready(function () {
@@ -408,7 +315,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </script>
         <!-- //here ends scrolling icon -->
         <script src="js/minicart.min.js"></script>
-       <script src="CustomJS/minicart.js"></script>
+        <script src="CustomJS/minicart.js"></script>
         <script>
             // Mini Cart
             paypal.minicart.render({
@@ -420,4 +327,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             }
         </script>
     </body>
-</html>
+    </html>
+
+</asp:Content>
