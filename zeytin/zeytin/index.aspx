@@ -87,18 +87,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- banner -->
         <div class="banner">
             <div class="w3l_banner_nav_left">
-                <div class="w3l_fresh_vegetables_grid2">
-                    <ul>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">All Brands</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Vegetables</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Fruits</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="drinks.html">Juices</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="pet.html">Pet Food</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="bread.html">Bread & Bakery</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="household.html">Cleaning</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Spices</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dry Fruits</a></li>
-                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dairy Products</a></li>
+                <div class="w3l_fresh_vegetables_grid2 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
+                    <ul style="padding-left: 15%; padding-top: 9%">
+                        <li><a href="products.html">Tüm Ürünler</a></li>
+                        <li><a href="vegetables.html">Sebzeler</a></li>
+                        <li><a href="vegetables.html">Meyveler</a></li>
+                        <li><a href="products.html">Baharatlar</a></li>
+                        <li><a href="products.html">Kuru Meyveler</a></li>
                     </ul>
                 </div>
             </div>
@@ -109,25 +104,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <ul class="slides">
                             <li>
                                 <div class="w3l_banner_nav_right_banner">
-                                    <h3>Make your <span>food</span> with Spicy.</h3>
+                                    <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
                                     <div class="more">
-                                        <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                        <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Tarifi Gör</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="w3l_banner_nav_right_banner1">
-                                    <h3>Make your <span>food</span> with Spicy.</h3>
+                                    <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
                                     <div class="more">
-                                        <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                        <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Tarifi Gör</a>
                                     </div>
                                 </div>
                             </li>
                             <li>
                                 <div class="w3l_banner_nav_right_banner2">
-                                    <h3>upto <i>50%</i> off.</h3>
+                                    <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
                                     <div class="more">
-                                        <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+                                        <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Tarifi Gör</a>
                                     </div>
                                 </div>
                             </li>
@@ -207,7 +202,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- top-brands -->
         <div class="top-brands">
             <div class="container">
-                <h3>Hot Offers</h3>
+                <h3>Ürünler</h3>
                 <!---728x90--->
                 <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
                 <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
@@ -233,44 +228,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
                     </script>
                 </div>
-                <div class="agile_top_brands_grids">
-                    <div class="col-md-3 top_brand_left">
-                        <div class="hover14 column">
-                            <div class="agile_top_brand_left_grid">
+                
+                    <div class="agile_top_brands_grids">
+                        <div class="col-md-3 top_brand_left">
+                            <div class="hover14 column">
+                                <div class="agile_top_brand_left_grid">
 
-                                <div class="agile_top_brand_left_grid1">
-                                    <figure>
-                                        <div class="snipcart-item block">
-                                            <div class="snipcart-thumb">
-                                                <a href="single.html">
-                                                    <img title=" " alt=" " src="images/1.png" /></a>
-                                                <p style="text-align: center">fortune sunflower oil</p>
-                                                <h4 style="text-align: center">$7.99</h4>
+                                    <div class="agile_top_brand_left_grid1">
+                                        <figure>
+                                            <div class="snipcart-item block">
+                                                <div class="snipcart-thumb">
+                                                    <a href="single.html">
+                                                        <img title=" " alt=" " src="images/1.png" /></a>
+                                                    <p style="text-align: center">fortune sunflower oil</p>
+                                                    <h4 style="text-align: center">$7.99</h4>
+                                                </div>
+                                                <div class="snipcart-details top_brand_home_details">
+                                                    <form action="#" method="post">
+                                                        <fieldset>
+                                                            <input type="hidden" name="cmd" value="_cart" />
+                                                            <input type="hidden" name="add" value="1" />
+                                                            <input type="hidden" name="business" value=" " />
+                                                            <input type="hidden" name="item_name" value="Fortune Sunflower Oil" />
+                                                            <input type="hidden" name="amount" value="7.99" />
+                                                            <input type="hidden" name="discount_amount" value="1.00" />
+                                                            <input type="hidden" name="currency_code" value="USD" />
+                                                            <input type="hidden" name="return" value=" " />
+                                                            <input type="hidden" name="cancel_return" value=" " />
+                                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
                                             </div>
-                                            <div class="snipcart-details top_brand_home_details">
-                                                <form action="#" method="post">
-                                                    <fieldset>
-                                                        <input type="hidden" name="cmd" value="_cart" />
-                                                        <input type="hidden" name="add" value="1" />
-                                                        <input type="hidden" name="business" value=" " />
-                                                        <input type="hidden" name="item_name" value="Fortune Sunflower Oil" />
-                                                        <input type="hidden" name="amount" value="7.99" />
-                                                        <input type="hidden" name="discount_amount" value="1.00" />
-                                                        <input type="hidden" name="currency_code" value="USD" />
-                                                        <input type="hidden" name="return" value=" " />
-                                                        <input type="hidden" name="cancel_return" value=" " />
-                                                        <input type="submit" name="submit" value="Add to cart" class="button" />
-                                                    </fieldset>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </figure>
+                                        </figure>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="clearfix"></div>
-                </div>
             </div>
         </div>
         <!-- //top-brands -->

@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>Manav Sipariş</title>
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
         <!-- //for-mobile-apps -->
@@ -70,11 +70,11 @@
 <body>
     <div class="agileits_header">
         <div class="w3l_offers">
-            <a href="products.html">Today's special Offers !</a>
+            <a href="products.html">Günün Teklifine Bak!</a>
         </div>
         <div class="w3l_search">
             <form action="#" method="post">
-                <input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+                <input type="text" name="Product" value="Ürün ara..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
                 <input type="submit" value=" ">
             </form>
         </div>
@@ -83,7 +83,7 @@
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
+                    <input type="submit" name="submit" value="Sepete Bak     " class="button" />
                 </fieldset>
             </form>
         </div>
@@ -94,8 +94,8 @@
                     <div class="mega-dropdown-menu">
                         <div class="w3ls_vegetables">
                             <ul class="dropdown-menu drp-mnu">
-                                <li><a href="login.html">Login</a></li>
-                                <li><a href="login.html">Sign Up</a></li>
+                                <li><a href="login.html">Giriş Yap</a></li>
+                                <li><a href="login.html">Kayıt ol</a></li>
                             </ul>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
             </ul>
         </div>
         <div class="w3l_header_right1">
-            <h2><a href="mail.html">Contact Us</a></h2>
+            <h2><a href="mail.html">İletişim</a></h2>
         </div>
         <div class="clearfix"></div>
     </div>
@@ -128,11 +128,11 @@
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
-                    <li><a href="events.html">Events</a><i>/</i></li>
-                    <li><a href="about.html">About Us</a><i>/</i></li>
-                    <li><a href="products.html">Best Deals</a><i>/</i></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
+                    <li><a href="events.html">Etkinlikler</a><i>/</i></li>
+                    <li><a href="about.html">Hakkımızda</a><i>/</i></li>
+                    <li><a href="products.html">Fırsatlar</a><i>/</i></li>
+                    <li><a href="services.html">Hizmetler</a></li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>(536) 234 567</li>
                     <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">store@grocery.com</a></li>
                 </ul>
             </div>
@@ -146,21 +146,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 w3_footer_grid">
-                    <h3>information</h3>
+                    <h3>Bilgilendirme</h3>
                     <ul class="w3_footer_grid_list">
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Best Deals</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="short-codes.html">Short Codes</a></li>
+                        <li><a href="events.html">Etkinlikler</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="products.html">Fırsatlar</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 w3_footer_grid">
-                    <h3>policy info</h3>
+                    <h3>Yardım</h3>
                     <ul class="w3_footer_grid_list">
-                        <li><a href="faqs.html">FAQ</a></li>
-                        <li><a href="privacy.html">privacy policy</a></li>
-                        <li><a href="privacy.html">terms of use</a></li>
+                        <li><a href="faqs.html">Sıkça Sorulan Sorular</a></li>
+                        <li><a href="privacy.html">Gizlilik Güvenlik</a></li>
+                        <li><a href="privacy.html">Kullanım Şartları</a></li>
                     </ul>
                 </div>
             </div>
