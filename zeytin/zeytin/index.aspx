@@ -19,7 +19,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="CustomCSS/font.css" rel="stylesheet" type="text/css" media="all" />
     <!-- //font-awesome icons -->
     <!-- js -->
-    <script src="js/jquery-1.11.1.min.js"></script>
     <script src="CustomJS/jquery-1.11.1.min.js"></script>
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <!-- //js -->
@@ -158,64 +157,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- //header -->
         <!-- banner -->
         <div class="banner">
-            <div class="w3l_banner_nav_left">
-                <nav class="navbar nav_bottom">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header nav_2">
-                        <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+            <div class ="w3l_banner_nav_left">
+            <div class="w3l_fresh_vegetables_grid2">
+                            <ul>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">All Brands</a></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Vegetables</a></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Fruits</a></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="drinks.html">Juices</a></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="pet.html">Pet Food</a></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="bread.html">Bread & Bakery</a></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="household.html">Cleaning</a></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Spices</a></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dry Fruits</a></li>
+                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dairy Products</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-                        <ul class="nav navbar-nav nav_1">
-                            <li><a href="products.html">Branded Foods</a></li>
-                            <li><a href="household.html">Households</a></li>
-                            <li class="dropdown mega-dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Veggies & Fruits<span class="caret"></span></a>
-                                <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-                                    <div class="w3ls_vegetables">
-                                        <ul>
-                                            <li><a href="vegetables.html">Vegetables</a></li>
-                                            <li><a href="vegetables.html">Fruits</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="kitchen.html">Kitchen</a></li>
-                            <li><a href="short-codes.html">Short Codes</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Beverages<span class="caret"></span></a>
-                                <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-                                    <div class="w3ls_vegetables">
-                                        <ul>
-                                            <li><a href="drinks.html">Soft Drinks</a></li>
-                                            <li><a href="drinks.html">Juices</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="pet.html">Pet Food</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Frozen Foods<span class="caret"></span></a>
-                                <div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-                                    <div class="w3ls_vegetables">
-                                        <ul>
-                                            <li><a href="frozen.html">Frozen Snacks</a></li>
-                                            <li><a href="frozen.html">Frozen Nonveg</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li><a href="bread.html">Bread & Bakery</a></li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </nav>
-            </div>
+        </div>
             <div class="w3l_banner_nav_right">
                 <section class="slider">
                     <div class="flexslider">
@@ -264,7 +222,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!-- //flexSlider -->
             </div>
             <div class="clearfix"></div>
-        </div>
         <!---728x90--->
         <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
         <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
@@ -291,38 +248,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </script>
         </div>
         <!-- banner -->
-        <div class="banner_bottom">
-            <div class="wthree_banner_bottom_left_grid_sub">
-            </div>
-            <div class="wthree_banner_bottom_left_grid_sub1">
-                <div class="col-md-4 wthree_banner_bottom_left">
-                    <div class="wthree_banner_bottom_left_grid">
-                        <img src="images/4.jpg" alt=" " class="img-responsive" />
-                        <div class="wthree_banner_bottom_left_grid_pos">
-                            <h4>Discount Offer <span>25%</span></h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 wthree_banner_bottom_left">
-                    <div class="wthree_banner_bottom_left_grid">
-                        <img src="images/5.jpg" alt=" " class="img-responsive" />
-                        <div class="wthree_banner_btm_pos">
-                            <h3>introducing <span>best store</span> for <i>groceries</i></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 wthree_banner_bottom_left">
-                    <div class="wthree_banner_bottom_left_grid">
-                        <img src="images/6.jpg" alt=" " class="img-responsive" />
-                        <div class="wthree_banner_btm_pos1">
-                            <h3>Save <span>Upto</span> $10</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
+        
         <!---728x90--->
         <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
         <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
@@ -381,16 +307,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="col-md-3 top_brand_left">
                         <div class="hover14 column">
                             <div class="agile_top_brand_left_grid">
-                                <div class="tag">
-                                    <img src="images/tag.png" alt=" " class="img-responsive" /></div>
+                               
                                 <div class="agile_top_brand_left_grid1">
                                     <figure>
                                         <div class="snipcart-item block">
                                             <div class="snipcart-thumb">
                                                 <a href="single.html">
                                                     <img title=" " alt=" " src="images/1.png" /></a>
-                                                <p>fortune sunflower oil</p>
-                                                <h4>$7.99 <span>$10.00</span></h4>
+                                                <p style="text-align:center">fortune sunflower oil</p>
+                                                <h4 style="text-align:center">$7.99</h4>
                                             </div>
                                             <div class="snipcart-details top_brand_home_details">
                                                 <form action="#" method="post">
@@ -400,114 +325,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                         <input type="hidden" name="business" value=" " />
                                                         <input type="hidden" name="item_name" value="Fortune Sunflower Oil" />
                                                         <input type="hidden" name="amount" value="7.99" />
-                                                        <input type="hidden" name="discount_amount" value="1.00" />
-                                                        <input type="hidden" name="currency_code" value="USD" />
-                                                        <input type="hidden" name="return" value=" " />
-                                                        <input type="hidden" name="cancel_return" value=" " />
-                                                        <input type="submit" name="submit" value="Add to cart" class="button" />
-                                                    </fieldset>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 top_brand_left">
-                        <div class="hover14 column">
-                            <div class="agile_top_brand_left_grid">
-                                <div class="agile_top_brand_left_grid1">
-                                    <figure>
-                                        <div class="snipcart-item block">
-                                            <div class="snipcart-thumb">
-                                                <a href="single.html">
-                                                    <img title=" " alt=" " src="images/3.png" /></a>
-                                                <p>basmati rise (5 Kg)</p>
-                                                <h4>$11.99 <span>$15.00</span></h4>
-                                            </div>
-                                            <div class="snipcart-details top_brand_home_details">
-                                                <form action="#" method="post">
-                                                    <fieldset>
-                                                        <input type="hidden" name="cmd" value="_cart" />
-                                                        <input type="hidden" name="add" value="1" />
-                                                        <input type="hidden" name="business" value=" " />
-                                                        <input type="hidden" name="item_name" value="basmati rise" />
-                                                        <input type="hidden" name="amount" value="11.99" />
-                                                        <input type="hidden" name="discount_amount" value="1.00" />
-                                                        <input type="hidden" name="currency_code" value="USD" />
-                                                        <input type="hidden" name="return" value=" " />
-                                                        <input type="hidden" name="cancel_return" value=" " />
-                                                        <input type="submit" name="submit" value="Add to cart" class="button" />
-                                                    </fieldset>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 top_brand_left">
-                        <div class="hover14 column">
-                            <div class="agile_top_brand_left_grid">
-                                <div class="agile_top_brand_left_grid_pos">
-                                    <img src="images/offer.png" alt=" " class="img-responsive" />
-                                </div>
-                                <div class="agile_top_brand_left_grid1">
-                                    <figure>
-                                        <div class="snipcart-item block">
-                                            <div class="snipcart-thumb">
-                                                <a href="single.html">
-                                                    <img src="images/2.png" alt=" " class="img-responsive" /></a>
-                                                <p>Pepsi soft drink (2 Ltr)</p>
-                                                <h4>$8.00 <span>$10.00</span></h4>
-                                            </div>
-                                            <div class="snipcart-details top_brand_home_details">
-                                                <form action="#" method="post">
-                                                    <fieldset>
-                                                        <input type="hidden" name="cmd" value="_cart" />
-                                                        <input type="hidden" name="add" value="1" />
-                                                        <input type="hidden" name="business" value=" " />
-                                                        <input type="hidden" name="item_name" value="Pepsi soft drink" />
-                                                        <input type="hidden" name="amount" value="8.00" />
-                                                        <input type="hidden" name="discount_amount" value="1.00" />
-                                                        <input type="hidden" name="currency_code" value="USD" />
-                                                        <input type="hidden" name="return" value=" " />
-                                                        <input type="hidden" name="cancel_return" value=" " />
-                                                        <input type="submit" name="submit" value="Add to cart" class="button" />
-                                                    </fieldset>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 top_brand_left">
-                        <div class="hover14 column">
-                            <div class="agile_top_brand_left_grid">
-                                <div class="agile_top_brand_left_grid_pos">
-                                    <img src="images/offer.png" alt=" " class="img-responsive" />
-                                </div>
-                                <div class="agile_top_brand_left_grid1">
-                                    <figure>
-                                        <div class="snipcart-item block">
-                                            <div class="snipcart-thumb">
-                                                <a href="single.html">
-                                                    <img src="images/4.png" alt=" " class="img-responsive" /></a>
-                                                <p>dogs food (4 Kg)</p>
-                                                <h4>$9.00 <span>$11.00</span></h4>
-                                            </div>
-                                            <div class="snipcart-details top_brand_home_details">
-                                                <form action="#" method="post">
-                                                    <fieldset>
-                                                        <input type="hidden" name="cmd" value="_cart" />
-                                                        <input type="hidden" name="add" value="1" />
-                                                        <input type="hidden" name="business" value=" " />
-                                                        <input type="hidden" name="item_name" value="dogs food" />
-                                                        <input type="hidden" name="amount" value="9.00" />
                                                         <input type="hidden" name="discount_amount" value="1.00" />
                                                         <input type="hidden" name="currency_code" value="USD" />
                                                         <input type="hidden" name="return" value=" " />
@@ -533,20 +350,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <h3>Top Products</h3>
                 <div class="w3l_fresh_vegetables_grids">
                     <div class="col-md-3 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
-                        <div class="w3l_fresh_vegetables_grid2">
-                            <ul>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">All Brands</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Vegetables</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Fruits</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="drinks.html">Juices</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="pet.html">Pet Food</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="bread.html">Bread & Bakery</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="household.html">Cleaning</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Spices</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dry Fruits</a></li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dairy Products</a></li>
-                            </ul>
-                        </div>
+                        
                     </div>
                     <div class="col-md-9 w3l_fresh_vegetables_grid_right">
                         <div class="col-md-4 w3l_fresh_vegetables_grid">
