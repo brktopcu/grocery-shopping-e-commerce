@@ -24,10 +24,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- //js -->
     <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- button css -->
+    <link href="CustomCSS/buttonStyle.css" rel="stylesheet" />
+    
     <!-- start-smoth-scrolling -->
     <script type="text/javascript" src="CustomJS/moveTop.js"></script>
     <script type="text/javascript" src="CustomJS/easing.js"></script>
     <script type="text/javascript">
+    
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {
                 event.preventDefault();
@@ -156,7 +160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="banner">
             <div class ="w3l_banner_nav_left">
             <div class="w3l_fresh_vegetables_grid2">
-                            <ul>
+                            <%--<ul>
                                 <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">All Brands</a></li>
                                 <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Vegetables</a></li>
                                 <li><i class="fa fa-check" aria-hidden="true"></i><a href="vegetables.html">Fruits</a></li>
@@ -167,7 +171,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Spices</a></li>
                                 <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dry Fruits</a></li>
                                 <li><i class="fa fa-check" aria-hidden="true"></i><a href="products.html">Dairy Products</a></li>
-                            </ul>
+                            </ul>--%>
+                <form runat="server">
+                    <asp:Button class="linkbtn" text= "Sebzeler" runat="server" /><br />
+                    <asp:Button class="linkbtn" Text="Meyveler" runat="server" /><br />
+                    <asp:Button class="linkbtn" Text="Diğer Ürünler" runat="server" /><br />
+
+                </form>
                         </div>
                     </div>
         </div>
