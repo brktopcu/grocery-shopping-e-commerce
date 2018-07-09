@@ -1,0 +1,15 @@
+﻿.linkbtn {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #84C639;
+    border-color: #84C639;
+    color: white;
+    width: 90%;
+    height: 40px;
+}
+    .linkbtn:hover {
+        background-color: #FA1818;
+        cursor: grab;
+    }
+
