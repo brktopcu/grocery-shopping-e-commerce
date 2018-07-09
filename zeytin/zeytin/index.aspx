@@ -344,78 +344,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
         <!-- //top-brands -->
-        <!-- fresh-vegetables -->
-        <div class="fresh-vegetables">
-            <div class="container">
-                <h3>Top Products</h3>
-                <div class="w3l_fresh_vegetables_grids">
-                    <div class="col-md-3 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
-                        
-                    </div>
-                    <div class="col-md-9 w3l_fresh_vegetables_grid_right">
-                        <div class="col-md-4 w3l_fresh_vegetables_grid">
-                            <div class="w3l_fresh_vegetables_grid1">
-                                <img src="images/8.jpg" alt=" " class="img-responsive" />
-                            </div>
-                        </div>
-                        <div class="col-md-4 w3l_fresh_vegetables_grid">
-                            <div class="w3l_fresh_vegetables_grid1">
-                                <div class="w3l_fresh_vegetables_grid1_rel">
-                                    <img src="images/7.jpg" alt=" " class="img-responsive" />
-                                    <div class="w3l_fresh_vegetables_grid1_rel_pos">
-                                        <div class="more m1">
-                                            <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w3l_fresh_vegetables_grid1_bottom">
-                                <img src="images/10.jpg" alt=" " class="img-responsive" />
-                                <div class="w3l_fresh_vegetables_grid1_bottom_pos">
-                                    <h5>Special Offers</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 w3l_fresh_vegetables_grid">
-                            <div class="w3l_fresh_vegetables_grid1">
-                                <img src="images/9.jpg" alt=" " class="img-responsive" />
-                            </div>
-                            <div class="w3l_fresh_vegetables_grid1_bottom">
-                                <img src="images/11.jpg" alt=" " class="img-responsive" />
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="agileinfo_move_text">
-                            <div class="agileinfo_marquee">
-                                <h4>get <span class="blink_me">25% off</span> on first order and also get gift voucher</h4>
-                            </div>
-                            <div class="agileinfo_breaking_news">
-                                <span></span>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </div>
-        <!-- //fresh-vegetables -->
-        <!-- newsletter -->
-        <div class="newsletter">
-            <div class="container">
-                <div class="w3agile_newsletter_left">
-                    <h3>sign up for our newsletter</h3>
-                </div>
-                <div class="w3agile_newsletter_right">
-                    <form action="#" method="post">
-                        <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                        <input type="submit" value="subscribe now">
-                    </form>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <!-- //newsletter -->
+      
+        
+       
         <!-- footer -->
         <div class="footer">
             <div class="container">
