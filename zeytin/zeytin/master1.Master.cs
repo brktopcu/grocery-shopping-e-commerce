@@ -13,5 +13,16 @@ namespace zeytin
         {
 
         }
+
+        protected void GirisYapBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/girisYap.aspx");
+        }
+
+        protected void KaydolBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Kaydol.aspx");
+
+        }
     }
 }
