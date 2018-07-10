@@ -156,6 +156,7 @@
                     <ul class="w3_footer_grid_list">
                         <li><a href="Hakkimizda.aspx">Hakkımızda</a></li>
                         <li><a href="Hizmetler.aspx">Hizmetler</a></li>
+                        <li><a>İletişim</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 w3_footer_grid">
