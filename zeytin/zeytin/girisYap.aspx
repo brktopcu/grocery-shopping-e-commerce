@@ -7,7 +7,9 @@
     <link href="CustomCSS/loginStyle.css" rel="stylesheet" />
 </head>
 <body>
-    <%--login--%>    <div class="w3_login">
+
+    <%--login--%>
+    <div class="w3_login">
 			<h3>Giriş Yap</h3>
 			<div class="w3_login_module">
 				<div class="module form-module">
@@ -34,5 +36,7 @@
 			</div>
 			
 		</div>
-<!-- //login --></body>
+<!-- //login -->
+
+</body>
 </html>
