@@ -40,293 +40,232 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </script>
         <!-- start-smoth-scrolling -->
     </head>
-        <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
-        <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
-        <script>
-            (function () {
-                if (typeof _bsa !== 'undefined' && _bsa) {
-                    // format, zoneKey, segment:value, options
-                    _bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
-                }
-            })();
-        </script>
-        <script>
-            (function () {
-                if (typeof _bsa !== 'undefined' && _bsa) {
-                    // format, zoneKey, segment:value, options
-                    _bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
-                }
-            })();
-        </script>
-        <script>
-            (function () {
-                if (typeof _bsa !== 'undefined' && _bsa) {
-                    // format, zoneKey, segment:value, options
-                    _bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
-                }
-            })();
-        </script>
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-            ga('create', 'UA-30027142-1', 'w3layouts.com');
-            ga('send', 'pageview');
-        </script>
-        <body>
-            <!---728x90--->
-            <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
-            <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
-                <script>
-                    var allowedNumberOfEboundDynamicAdds = 4;
-                    var sizesEboundDynamicAdsDesktop = ['728x90'];
-                    var sizesEboundDynamicAdsTablet = ['728x90'];
-                    var sizesEboundDynamicAdsMobile = ['320x100'];
-                    eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+    <script>
+        (function () {
+            if (typeof _bsa !== 'undefined' && _bsa) {
+                // format, zoneKey, segment:value, options
+                _bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
+            }
+        })();
+    </script>
+    <script>
+        (function () {
+            if (typeof _bsa !== 'undefined' && _bsa) {
+                // format, zoneKey, segment:value, options
+                _bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
+            }
+        })();
+    </script>
+    <script>
+        (function () {
+            if (typeof _bsa !== 'undefined' && _bsa) {
+                // format, zoneKey, segment:value, options
+                _bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
+            }
+        })();
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-30027142-1', 'w3layouts.com');
+        ga('send', 'pageview');
+    </script>
+    <body>
+        <!---728x90--->
+        <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
+        <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
+            <script>
+                var allowedNumberOfEboundDynamicAdds = 4;
+                var sizesEboundDynamicAdsDesktop = ['728x90'];
+                var sizesEboundDynamicAdsTablet = ['728x90'];
+                var sizesEboundDynamicAdsMobile = ['320x100'];
+                eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
 
-                    if (typeof user_tag_config == 'undefined') {
-                        var user_tag_config = {};
-                    }
-                    user_tag_config['ebound_header_tag'] = {};
-                    user_tag_config['ebound_header_tag']['desktop'] = {};
-                    user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
-                    user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
-                    user_tag_config['ebound_header_tag']['tablet'] = {};
-                    user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
-                    user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
-                    user_tag_config['ebound_header_tag']['mobile'] = {};
-                    user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
-                    user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
-                </script>
-            </div>
-            <!-- banner -->
-            <div class="banner">
-                <div class="w3l_banner_nav_right">
-                    <!-- services -->
-                    <div class="services">
-                        <h3>Services</h3>
+                if (typeof user_tag_config == 'undefined') {
+                    var user_tag_config = {};
+                }
+                user_tag_config['ebound_header_tag'] = {};
+                user_tag_config['ebound_header_tag']['desktop'] = {};
+                user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
+                user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
+                user_tag_config['ebound_header_tag']['tablet'] = {};
+                user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
+                user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
+                user_tag_config['ebound_header_tag']['mobile'] = {};
+                user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
+                user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
+            </script>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+            <div>
+                <!-- services -->
+                <div class="services">
+                    <h3>Hizmetler</h3>
+                    <div class="container">
+
                         <div class="w3ls_service_grids">
-                            <div class="col-md-5 w3ls_service_grid_left">
-                                <h4>cum soluta nobis est</h4>
-                                <p>
-                                    Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+                            <div class="row">
+                                <div class="col-md-6 w3ls_service_grid_left">
+
+
+                                    <h4>cum soluta nobis est</h4>
+                                    <p>
+                                        Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
 						voluptatibus maiores alias consequatur aut perferendis doloribus asperiores 
 						repellat.
-                                </p>
-                            </div>
-                            <div class="col-md-7 w3ls_service_grid_right">
-                                <div class="col-md-4 w3ls_service_grid_right_1">
-                                    <img src="images/18.jpg" alt=" " class="img-responsive" />
+                                    </p>
                                 </div>
-                                <div class="col-md-4 w3ls_service_grid_right_1">
-                                    <img src="images/19.jpg" alt=" " class="img-responsive" />
+                                <div class="col-md-6 w3ls_service_grid_right">
+                                    <div class="row">
+                                        <div class="col-md-4 w3ls_service_grid_right_1">
+                                            <img style="width: 200px; padding: 10%" src="images/18.jpg" alt=" " class="img-responsive" />
+                                        </div>
+                                        <div class="col-md-4 w3ls_service_grid_right_1">
+                                            <img style="width: 200px; padding: 10%" src="images/19.jpg" alt=" " class="img-responsive" />
+                                        </div>
+                                        <div class="col-md-4 w3ls_service_grid_right_1">
+                                            <img style="width: 200px; padding: 10%" src="images/20.jpg" alt=" " class="img-responsive" />
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 w3ls_service_grid_right_1">
-                                    <img src="images/20.jpg" alt=" " class="img-responsive" />
-                                </div>
-                                <div class="clearfix"></div>
                             </div>
-                            <div class="clearfix"></div>
-                        </div>
-                        <!---728x90--->
-                        <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
-                        <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
-                            <script>
-                                var allowedNumberOfEboundDynamicAdds = 4;
-                                var sizesEboundDynamicAdsDesktop = ['728x90'];
-                                var sizesEboundDynamicAdsTablet = ['728x90'];
-                                var sizesEboundDynamicAdsMobile = ['320x100'];
-                                eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
-
-                                if (typeof user_tag_config == 'undefined') {
-                                    var user_tag_config = {};
-                                }
-                                user_tag_config['ebound_header_tag'] = {};
-                                user_tag_config['ebound_header_tag']['desktop'] = {};
-                                user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
-                                user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
-                                user_tag_config['ebound_header_tag']['tablet'] = {};
-                                user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
-                                user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
-                                user_tag_config['ebound_header_tag']['mobile'] = {};
-                                user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
-                                user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
-                            </script>
-                        </div>
-                        <div class="w3ls_service_grids1">
-                            <div class="col-md-6 w3ls_service_grids1_left">
-                                <img src="images/4.jpg" alt=" " class="img-responsive" />
-                            </div>
-                            <div class="col-md-6 w3ls_service_grids1_right">
-                                <ul>
-                                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>et voluptates repudiandae sint et molestiae</li>
-                                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>rerum necessitatibus saepe eveniet ut</li>
-                                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>placeat facere possimus, omnis voluptas</li>
-                                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Et harum quidem rerum facilis est et expedita</li>
-                                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>similique sunt in culpa qui officia deserunt</li>
-                                    <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>odio dignissimos ducimus qui blanditiis</li>
-                                </ul>
-                                <a href="single.html">Shop Now</a>
-                            </div>
-                            <div class="clearfix"></div>
                         </div>
                     </div>
-                    <!-- //services -->
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <!-- //banner -->
-            <!---728x90--->
-            <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
-            <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
-                <script>
-                    var allowedNumberOfEboundDynamicAdds = 4;
-                    var sizesEboundDynamicAdsDesktop = ['728x90'];
-                    var sizesEboundDynamicAdsTablet = ['728x90'];
-                    var sizesEboundDynamicAdsMobile = ['320x100'];
-                    eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
-
-                    if (typeof user_tag_config == 'undefined') {
-                        var user_tag_config = {};
-                    }
-                    user_tag_config['ebound_header_tag'] = {};
-                    user_tag_config['ebound_header_tag']['desktop'] = {};
-                    user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
-                    user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
-                    user_tag_config['ebound_header_tag']['tablet'] = {};
-                    user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
-                    user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
-                    user_tag_config['ebound_header_tag']['mobile'] = {};
-                    user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
-                    user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
-                </script>
-            </div>
-            <!-- services-bottom -->
-            <div class="services-bottom">
-                <div class="container">
-                    <div class="col-md-3 about_counter_left">
-                        <i class="glyphicon glyphicon-user" aria-hidden="true"></i>
-                        <p class="counter">89,147</p>
-                        <h3>Followers</h3>
-                    </div>
-                    <div class="col-md-3 about_counter_left">
-                        <i class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></i>
-                        <p class="counter">54,598</p>
-                        <h3>Savings</h3>
-                    </div>
-                    <div class="col-md-3 about_counter_left">
-                        <i class="glyphicon glyphicon-export" aria-hidden="true"></i>
-                        <p class="counter">83,983</p>
-                        <h3>Support</h3>
-                    </div>
-                    <div class="col-md-3 about_counter_left">
-                        <i class="glyphicon glyphicon-bullhorn" aria-hidden="true"></i>
-                        <p class="counter">45,894</p>
-                        <h3>Popularity</h3>
-                    </div>
+                    <hr />
                     <div class="clearfix"></div>
-                    <!-- Stats-Number-Scroller-Animation-JavaScript -->
-                    <script src="js/waypoints.min.js"></script>
-                    <script src="js/counterup.min.js"></script>
+                </div>
+                <!---728x90--->
+                <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
+                <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
                     <script>
-                        jQuery(document).ready(function ($) {
-                            $('.counter').counterUp({
-                                delay: 10,
-                                time: 1000
-                            });
-                        });
-                    </script>
-                    <!-- //Stats-Number-Scroller-Animation-JavaScript -->
+                        var allowedNumberOfEboundDynamicAdds = 4;
+                        var sizesEboundDynamicAdsDesktop = ['728x90'];
+                        var sizesEboundDynamicAdsTablet = ['728x90'];
+                        var sizesEboundDynamicAdsMobile = ['320x100'];
+                        eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
 
-                </div>
-            </div>
-            <!-- //services-bottom -->
-            <!-- newsletter-top-serv-btm -->
-            <div class="newsletter-top-serv-btm">
-                <div class="container">
-                    <div class="col-md-4 wthree_news_top_serv_btm_grid">
-                        <div class="wthree_news_top_serv_btm_grid_icon">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </div>
-                        <h3>Nam libero tempore</h3>
-                        <p>
-                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.
-                        </p>
-                    </div>
-                    <div class="col-md-4 wthree_news_top_serv_btm_grid">
-                        <div class="wthree_news_top_serv_btm_grid_icon">
-                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                        </div>
-                        <h3>officiis debitis aut rerum</h3>
-                        <p>
-                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.
-                        </p>
-                    </div>
-                    <div class="col-md-4 wthree_news_top_serv_btm_grid">
-                        <div class="wthree_news_top_serv_btm_grid_icon">
-                            <i class="fa fa-truck" aria-hidden="true"></i>
-                        </div>
-                        <h3>eveniet ut et voluptates</h3>
-                        <p>
-                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus 
-					saepe eveniet ut et voluptates repudiandae sint et.
-                        </p>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            <!-- //newsletter-top-serv-btm -->
-
-            <!-- Bootstrap Core JavaScript -->
-            <script src="Scripts/bootstrap.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    $(".dropdown").hover(
-                        function () {
-                            $('.dropdown-menu', this).stop(true, true).slideDown("fast");
-                            $(this).toggleClass('open');
-                        },
-                        function () {
-                            $('.dropdown-menu', this).stop(true, true).slideUp("fast");
-                            $(this).toggleClass('open');
+                        if (typeof user_tag_config == 'undefined') {
+                            var user_tag_config = {};
                         }
-                    );
-                });
-            </script>
-            <!-- here stars scrolling icon -->
-            <script type="text/javascript">
-                $(document).ready(function () {
-                    /*
-                        var defaults = {
-                        containerID: 'toTop', // fading element id
-                        containerHoverID: 'toTopHover', // fading element hover id
-                        scrollSpeed: 1200,
-                        easingType: 'linear' 
-                        };
-                    */
+                        user_tag_config['ebound_header_tag'] = {};
+                        user_tag_config['ebound_header_tag']['desktop'] = {};
+                        user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
+                        user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
+                        user_tag_config['ebound_header_tag']['tablet'] = {};
+                        user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
+                        user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
+                        user_tag_config['ebound_header_tag']['mobile'] = {};
+                        user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
+                        user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
+                    </script>
 
-                    $().UItoTop({ easingType: 'easeOutQuart' });
+                </div>
+                <div class="row">
+                    <div style="margin-left:10%;margin-top:-4%" class="col-md-6 w3ls_service_grids1_right">
+                        <ul>
+                            <li>et voluptates repudiandae sint et molestiae</li>
+                            <li>rerum necessitatibus saepe eveniet ut</li>
+                            <li>placeat facere possimus, omnis voluptas</li>
+                            <li>Et harum quidem rerum facilis est et expedita</li>
+                            <li>similique sunt in culpa qui officia deserunt</li>
+                            <li>odio dignissimos ducimus qui blanditiis</li>
+                        </ul>
+                        <a href="index.aspx">Alışverişe Başla</a>
+                    </div>
+                    <div style="margin-top: -5%" class="w3ls_service_grids1">
+                        <div style="margin-left:-3%" class="col-md-6 w3ls_service_grids1_left">
+                            <img style="height:300px" src="images/4.jpg" alt=" " class="img-responsive" />
+                        </div>
 
-                });
-            </script>
-            <!-- //here ends scrolling icon -->
-            <script src="CustomJS/minicart.js"></script>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <!-- //services -->
+        </div>
+        <div class="clearfix"></div>
+        <!-- //banner -->
+        <!---728x90--->
+        <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
+        <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
             <script>
-                // Mini Cart
-                paypal.minicart.render({
-                    action: '#'
-                });
+                var allowedNumberOfEboundDynamicAdds = 4;
+                var sizesEboundDynamicAdsDesktop = ['728x90'];
+                var sizesEboundDynamicAdsTablet = ['728x90'];
+                var sizesEboundDynamicAdsMobile = ['320x100'];
+                eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
 
-                if (~window.location.search.indexOf('reset=true')) {
-                    paypal.minicart.reset();
+                if (typeof user_tag_config == 'undefined') {
+                    var user_tag_config = {};
                 }
+                user_tag_config['ebound_header_tag'] = {};
+                user_tag_config['ebound_header_tag']['desktop'] = {};
+                user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
+                user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
+                user_tag_config['ebound_header_tag']['tablet'] = {};
+                user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
+                user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
+                user_tag_config['ebound_header_tag']['mobile'] = {};
+                user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
+                user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
             </script>
-        </body>
+        </div>
+        <!-- services-bottom -->
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".dropdown").hover(
+                    function () {
+                        $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                        $(this).toggleClass('open');
+                    },
+                    function () {
+                        $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                        $(this).toggleClass('open');
+                    }
+                );
+            });
+        </script>
+        <!-- here stars scrolling icon -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                /*
+                    var defaults = {
+                    containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear' 
+                    };
+                */
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+        </script>
+        <!-- //here ends scrolling icon -->
+        <script src="CustomJS/minicart.js"></script>
+        <script>
+            // Mini Cart
+            paypal.minicart.render({
+                action: '#'
+            });
+
+            if (~window.location.search.indexOf('reset=true')) {
+                paypal.minicart.reset();
+            }
+        </script>
+    </body>
     </html>
 
 </asp:Content>

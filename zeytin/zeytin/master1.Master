@@ -153,10 +153,8 @@
                 <div class="col-md-6 w3_footer_grid">
                     <h3>Bilgilendirme</h3>
                     <ul class="w3_footer_grid_list">
-                        <li><a href="events.html">Etkinlikler</a></li>
-                        <li><a href="about.html">Hakkımızda</a></li>
-                        <li><a href="products.html">Fırsatlar</a></li>
-                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="Hakkimizda.aspx">Hakkımızda</a></li>
+                        <li><a href="Hizmetler.aspx">Hizmetler</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 w3_footer_grid">
