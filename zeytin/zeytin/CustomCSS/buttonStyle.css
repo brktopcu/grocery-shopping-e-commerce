@@ -13,3 +13,16 @@
         cursor: grab;
     }
 
+#GirisYapBtn {
+    color: #fff;
+}
+
+#GirisYapBtn:hover {
+    color: #FA1818;
+}
+#KaydolBtn {
+    color: #fff;
+}
+#KaydolBtn:hover {
+    color: #FA1818;
+}

@@ -137,7 +137,9 @@ input[type="submit"], #PPMiniCart .minicart-submit, .w3ls_vegetables ul li a, in
 
 .w3l_header_right {
     float: left;
-    padding-left: 10em;
+    padding-left: 5em;
+    padding-top: 0.8em;
+    color: #fff;
 }
 
     .w3l_header_right ul li {
@@ -810,6 +812,7 @@ ul.dropdown-menu.drp-mnu {
         margin-bottom: 3.5em;
         color: #84C639;
     }
+       
 
         .w3l_fresh_vegetables_grid ul li i {
             padding-right: 1em;
@@ -820,10 +823,14 @@ ul.dropdown-menu.drp-mnu {
             text-transform: uppercase;
             color: #212121;
             text-decoration: none;
+            
         }
 
             .w3l_fresh_vegetables_grid ul li a:hover {
-                color: #84C639;
+                color: #FA1818;
+                font-size:larger;
+                
+
             }
 
 .w3l_fresh_vegetables_grid2 {
@@ -2768,7 +2775,7 @@ ul.wmuSliderPagination {
 
 @media (max-width:1440px) {
     .w3l_header_right {
-        padding-left: 4em;
+        padding-left: 2em;
     }
 
     .w3l_banner_nav_right_banner3 h3, .w3l_banner_nav_right_banner4 h3, .w3l_banner_nav_right_banner5 h3, .w3l_banner_nav_right_banner6 h3, .w3l_banner_nav_right_banner7 h3, .w3l_banner_nav_right_banner8 h3, .w3l_banner_nav_right_banner9 h3, .w3l_banner_nav_right_banner10 h3 {
