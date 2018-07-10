@@ -112,7 +112,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li>
                                 <div class="w3l_banner_nav_right_banner2">
                                     <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
-                                    <div class="more">
+                                    <div style="margin-left:80%" class="more">
                                         <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
                                     </div>
                                 </div>
