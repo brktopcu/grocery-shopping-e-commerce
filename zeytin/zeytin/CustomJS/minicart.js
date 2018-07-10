@@ -1909,7 +1909,7 @@ var defaults = module.exports = {
         button: 'Check Out with <img src="//cdnjs.cloudflare.com/ajax/libs/minicart/3.0.1/paypal_65x18.png" width="65" height="18" alt="PayPal" />',
         subtotal: 'Toplam:',
         discount: 'Ýndirim:',
-        empty: 'Sepetiniz boþ!'
+        empty: 'Sepetinizi doldurun!'
     }
 
 };
