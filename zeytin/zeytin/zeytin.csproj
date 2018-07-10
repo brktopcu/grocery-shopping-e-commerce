@@ -86,7 +86,9 @@
     <Content Include="CustomJS\jquery-1.11.1.min.js" />
     <Content Include="CustomJS\minicart.js" />
     <Content Include="CustomJS\moveTop.js" />
+    <Content Include="CustomJS\wmuSlider.js" />
     <Content Include="girisYap.aspx" />
+    <Content Include="Hakkımızda.aspx" />
     <Content Include="images\1.jpg" />
     <Content Include="images\1.png" />
     <Content Include="images\10.jpg" />
@@ -254,6 +256,13 @@
     </Compile>
     <Compile Include="girisYap.aspx.designer.cs">
       <DependentUpon>girisYap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkımızda.aspx.cs">
+      <DependentUpon>Hakkımızda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hakkımızda.aspx.designer.cs">
+      <DependentUpon>Hakkımızda.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
