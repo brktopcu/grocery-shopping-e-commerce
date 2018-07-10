@@ -125,10 +125,9 @@
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
-                    <li><a href="events.html">Etkinlikler</a><i>/</i></li>
-                    <li><a href="about.html">Hakkımızda</a><i>/</i></li>
-                    <li><a href="products.html">Fırsatlar</a><i>/</i></li>
-                    <li><a href="services.html">Hizmetler</a></li>
+                    <li><a href="events.html">Ana Sayfa</a><i>/</i></li>
+                    <li><a href="about.html">Hizmetler</a><i>/</i></li>
+                    <li><a href="services.html">Hakkımızda</a></li>
                     <li><i class="fa fa-phone" aria-hidden="true"></i>(536) 234 567</li>
                     <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:store@grocery.com">store@grocery.com</a></li>
                 </ul>
