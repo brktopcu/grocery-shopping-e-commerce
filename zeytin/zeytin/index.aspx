@@ -18,6 +18,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <link href="CustomCSS/myStyle.css" rel="stylesheet" type="text/css" media="all" />
         <!-- font-awesome icons -->
         <link href="CustomCSS/font.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- //font-awesome icons -->
         <!-- js -->
         <script src="CustomJS/jquery-1.11.1.min.js"></script>
@@ -95,7 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li>
                                 <div class="w3l_banner_nav_right_banner">
                                     <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
-                                    <div class="more">
+                                    <div style="margin-left:80%" class="more">
                                         <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
                                     </div>
                                 </div>
@@ -103,7 +104,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li>
                                 <div class="w3l_banner_nav_right_banner1">
                                     <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
-                                    <div class="more">
+                                    <div style="margin-left:80%" class="more">
                                         <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
                                     </div>
                                 </div>

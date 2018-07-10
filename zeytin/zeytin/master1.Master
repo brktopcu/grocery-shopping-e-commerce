@@ -12,6 +12,7 @@
     <link href="CustomCSS/myStyle.css" rel="stylesheet" type="text/css" media="all" />
     <!-- font-awesome icons -->
     <link href="CustomCSS/font.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- //font-awesome icons -->
     <link href="CustomCSS/buttonStyle.css" rel="stylesheet" />
     <!-- js -->
