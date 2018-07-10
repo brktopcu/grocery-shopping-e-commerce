@@ -90,6 +90,7 @@
     <Content Include="girisYap.aspx" />
     <Content Include="Hakkimizda.aspx" />
     <Content Include="Hizmetler.aspx" />
+    <Content Include="iletisim.aspx" />
     <Content Include="images\1.jpg" />
     <Content Include="images\1.png" />
     <Content Include="images\10.jpg" />
@@ -272,6 +273,13 @@
     </Compile>
     <Compile Include="Hizmetler.aspx.designer.cs">
       <DependentUpon>Hizmetler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
