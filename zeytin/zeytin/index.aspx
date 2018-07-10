@@ -86,19 +86,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- //header -->
         <!-- banner -->
         <div class="banner">
-            <div class="w3l_banner_nav_left">
-                <div class="w3l_fresh_vegetables_grid2 w3l_fresh_vegetables_grid w3l_fresh_vegetables_grid_left">
-                    <ul style="padding-left: 15%; padding-top: 9%">
-                        <li><a href="products.html">Tüm Ürünler</a></li>
-                        <li><a href="vegetables.html">Sebzeler</a></li>
-                        <li><a href="vegetables.html">Meyveler</a></li>
-                        <li><a href="products.html">Baharatlar</a></li>
-                        <li><a href="products.html">Kuru Meyveler</a></li>
-                    </ul>
-                </div>
-            </div>
+           
 
-            <div class="w3l_banner_nav_right">
+            <div>
                 <section class="slider">
                     <div class="flexslider">
                         <ul class="slides">
@@ -202,7 +192,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- top-brands -->
         <div class="top-brands">
             <div class="container">
-                <h3>Ürünler</h3>
+                       
+                <h3><a ID="sebze">Sebzeler</a> / <a ID="meyve">Meyveler</a></h3>
+                
                 <!---728x90--->
                 <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
                 <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
