@@ -69,10 +69,7 @@
     </script>
 <body>
     <div class="agileits_header">
-        <div class="w3l_offers">
-            <a href="products.html">Günün Teklifine Bak!</a>
-        </div>
-        <div class="w3l_search">
+        <div style="margin-left:30%" class="w3l_search">
             <form action="#" method="post">
                 <input type="text" name="Product" value="Ürün ara..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
                 <input type="submit" value=" ">
