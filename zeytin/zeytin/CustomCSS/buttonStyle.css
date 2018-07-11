@@ -10,8 +10,11 @@
 }
     .linkbtn:hover {
         background-color: #FA1818;
-        cursor: grab;
+        cursor: pointer;
     }
+   .button:hover{
+       cursor:pointer;
+   }
 
 #GirisYapBtn {
     color: #fff;

@@ -308,7 +308,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- //here ends scrolling icon -->
         <script src="js/minicart.min.js"></script>
         <script src="CustomJS/minicart.js"></script>
-        <script>
+        <%--<script>
             // Mini Cart
             paypal.minicart.render({
                 action: '#'
@@ -317,7 +317,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             if (~window.location.search.indexOf('reset=true')) {
                 paypal.minicart.reset();
             }
-        </script>
+        </script>--%>
     </body>
     </html>
 

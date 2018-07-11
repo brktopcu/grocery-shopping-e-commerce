@@ -69,6 +69,14 @@
     ga('create', 'UA-30027142-1', 'w3layouts.com');
     ga('send', 'pageview');
 </script>
+    <script>
+        function sepetegit() {
+
+            window.location.href = "Onay.aspx";
+         
+        }
+
+    </script>
 <body>
     <div class="agileits_header">
         <div style="margin-left: 24%" class="w3l_search">
@@ -82,7 +90,7 @@
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="Sepetim           " class="button" />
+                   <input id="btnsepet" type="button" value="Sepetim           " class="button" onclick="sepetegit()"  />
                 </fieldset>
             </form>
         </div>
