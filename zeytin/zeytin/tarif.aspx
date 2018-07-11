@@ -24,7 +24,7 @@
                 </div>
 
                 <h3 style="text-align: center; text-decoration: underline;">Yemek Tarifi</h3>
-                <asp:TextBox ID="TextBox2" runat="server" BorderStyle="None" TextMode="MultiLine" Style="overflow: hidden; width: 80%; height: 300px; margin-left: 20%" ReadOnly="True"></asp:TextBox>
+                <asp:TextBox ID="TextBox2" runat="server" BorderStyle="None" TextMode="MultiLine" Style="overflow: hidden; width: 80%; height: 300px; margin-left: 10%" ReadOnly="True"></asp:TextBox>
             </div>
         </form>
 
