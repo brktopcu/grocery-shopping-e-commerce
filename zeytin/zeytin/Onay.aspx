@@ -16,6 +16,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="CustomCSS/myStyle.css" rel="stylesheet" type="text/css" media="all" />
         <link href="CustomCSS/checkout.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="CustomCSS/buttonStyle.css" rel="stylesheet" />
 
         <!-- font-awesome icons -->
         <link href="CustomCSS/font.css" rel="stylesheet" type="text/css" media="all" />
@@ -32,27 +33,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div>
                 <!-- about -->
                 <div class="privacy about">
-                    <h3>Chec<span>kout</span></h3>
+                    <h3>Sepeti<span> Onayla</span></h3>
 
                     <div class="checkout-right">
-                        <h4>Your shopping cart contains: <span>3 Products</span></h4>
+                      
                         <table class="timetable_sub">
                             <thead>
                                 <tr>
-                                    <th>SL No.</th>
-                                    <th>Product</th>
-                                    <th>Quantity</th>
-                                    <th>Product Name</th>
+                                    <th>No.</th>
+                                    <th>Ürün</th>
+                                    <th>Adedi</th>
+                                    <th>Ürün Adı</th>
 
-                                    <th>Price</th>
-                                    <th>Remove</th>
+                                    <th>Fiyatı</th>
+                                    <th>Çıkar</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="rem1">
                                     <td class="invert">1</td>
-                                    <td class="invert-image"><a href="single.html">
-                                        <img src="images/1.png" alt=" " class="img-responsive"></a></td>
+                                    <td class="invert-image">
+                                        <a>
+                                            <img src="images/1.png" alt=" " class="img-responsive"></a>
+                                    </td>
                                     <td class="invert">
                                         <div class="quantity">
                                             <div class="quantity-select">
@@ -74,7 +77,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </tr>
                                 <tr class="rem2">
                                     <td class="invert">2</td>
-                                    <td class="invert-image"><a href="single.html">
+                                    <td class="invert-image"><a>
                                         <img src="images/3.png" alt=" " class="img-responsive"></a></td>
                                     <td class="invert">
                                         <div class="quantity">
@@ -97,7 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </tr>
                                 <tr class="rem3">
                                     <td class="invert">3</td>
-                                    <td class="invert-image"><a href="single.html">
+                                    <td class="invert-image"><a>
                                         <img src="images/2.png" alt=" " class="img-responsive"></a></td>
                                     <td class="invert">
                                         <div class="quantity">
@@ -125,23 +128,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="checkout-left">
                         <div style="margin-left: 67%" class="col-md-4 checkout-left-basket">
                             <ul>
-                                <li>Total <i>-</i> <span>$84.00</span></li>
+                                <li>Toplam :<span>$84.00</span></li>
                             </ul>
                         </div>
                         <div class="col-md-8 address_form_agile">
-                            <button class="submit check_out">Delivery to this Address</button>
+                            <form id="form1" runat="server">
 
+                                <div class="container">
+
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <asp:Button ID="btngeridon" CssClass="button" Style="display: block; position: relative; padding: 11px 14px; letter-spacing: 2px; font-size: 14pt; margin-left: 63%; background-color: #84c639; border-color: #84c639; font-family: Arial; color: white" runat="server" Text="Alışverişe Dön" BorderStyle="Groove" OnClick="btngeridon_Click" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <asp:Button ID="btnsiparis" CssClass="button" Style="display: block; position: relative; padding: 11px 14px; letter-spacing: 1px; font-size: 14pt; margin-left: 26%; background-color: #84c639; border-color: #84c639; font-family: Arial; color: white" runat="server" Text="Siparişi Tamamla" BorderStyle="Groove" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
 
                     <div class="clearfix"></div>
 
-                    </div>
-
                 </div>
-                <!-- //about -->
+
             </div>
-            <div class="clearfix"></div>
+            <!-- //about -->
+        </div>
+        <div class="clearfix"></div>
         <!-- //banner -->
         <!-- js -->
         <script src="CustomJS/jquery-1.11.1.min.js"></script>
