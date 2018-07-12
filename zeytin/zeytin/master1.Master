@@ -5,6 +5,15 @@
 <html>
 <head runat="server">
     <title>Manav Sipariş</title>
+    <script runat="server">
+        void CikisYap(Object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+            FormsAuthentication.SignOut();
+            Response.Redirect("/index.aspx");
+        }
+    </script>
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //for-mobile-apps -->
@@ -69,14 +78,14 @@
     ga('create', 'UA-30027142-1', 'w3layouts.com');
     ga('send', 'pageview');
 </script>
-    <script>
-        function sepetegit() {
+<script>
+    function sepetegit() {
 
-            window.location.href = "Onay.aspx";
-         
-        }
+        window.location.href = "Onay.aspx";
 
-    </script>
+    }
+
+</script>
 <body>
     <div class="agileits_header">
         <div style="margin-left: 24%" class="w3l_search">
@@ -90,7 +99,7 @@
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
-                   <input id="btnsepet" type="button" value="Sepetim           " class="button" onclick="sepetegit()"  />
+                    <input id="btnsepet" type="button" value="Sepetim           " class="button" onclick="sepetegit()" />
                 </fieldset>
             </form>
         </div>
@@ -109,9 +118,9 @@
                 </li>
             </ul>--%>
             <div>
-                <a href="girisYap.aspx" id="GirisYapBtn">Giriş Yap</a>
+                <a runat="server" href="girisYap.aspx" id="GirisYapBtn">Giriş Yap</a>
                 <span style="color: white">/</span>
-                <a href="Kaydol.aspx" id="KaydolBtn">Kaydol</a>
+                <a runat="server" id="KaydolBtn" href="Kaydol.aspx">Kaydol</a>
 
 
             </div>
