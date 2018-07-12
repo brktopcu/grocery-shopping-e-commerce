@@ -21,9 +21,10 @@ namespace zeytin
             if (Session["Kullanici"]!=null)
             {
                 GirisYapBtn.InnerText = Session["Kullanici"].ToString();
-                GirisYapBtn.HRef = "#";
+                GirisYapBtn.HRef = "profilim.aspx";
                 KaydolBtn.InnerText = "Çıkış";   
-                KaydolBtn.HRef = "/index.aspx";
+                KaydolBtn.HRef = "/cikis.aspx";
+                divara.Style.Add("margin-left","20%");
             }
             
 
