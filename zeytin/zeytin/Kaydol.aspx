@@ -6,10 +6,9 @@
 <head runat="server">
     <title>Kaydol</title>
     <link href="CustomCSS/loginStyle.css" rel="stylesheet" />
-    
+    <link href="CustomCSS/etiket.css" rel="stylesheet" />
 </head>
 <body>
-  
     <!-- login -->
     <div class="w3_login">
         <h3>Kaydol</h3>
@@ -29,6 +28,9 @@
                         <br />
                         <br />
                         <asp:Button ID="btnKaydol" CssClass="btnGirisKaydol" runat="server" Text="Kaydol" OnClick="btnKaydol_Click" />
+                        <div style="margin-top:7%;">
+                            <asp:Label ID="lblmesaj" runat="server" Visible="false" Text="* Bu e-posta kullanılmaktadır." />
+                        </div>
                     </form>
                 </div>
 
