@@ -18,25 +18,34 @@ namespace zeytin
 
         protected void btngiris_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection();
-            conn.ConnectionString = ConfigurationManager.ConnectionStrings["Connection"].ConnectionString;
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = conn;
-            cmd.CommandText = "Select COUNT(1) from Kullanicilar k where k.ePosta = @ePosta and k.sifre = @sifre";
-            conn.Open();
-            cmd.Parameters.AddWithValue("@ePosta",txteposta.Text);
-            cmd.Parameters.AddWithValue("@sifre",txtsifre.Text);
-            int count = Convert.ToInt32(cmd.ExecuteScalar());
-            if (count ==1)
+            try
             {
-                Session["Kullanici"] = txteposta.Text;
-                Response.Redirect("/index.aspx");
+                SqlConnection conn = new SqlConnection();
+                conn.ConnectionString = ConfigurationManager.ConnectionStrings["Connection"].ConnectionString;
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "Select COUNT(1) from Kullanicilar k where k.ePosta = @ePosta and k.sifre = @sifre";
+                conn.Open();
+                cmd.Parameters.AddWithValue("@ePosta", txteposta.Text);
+                cmd.Parameters.AddWithValue("@sifre", txtsifre.Text);
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                if (count == 1)
+                {
+                    Session["Kullanici"] = txteposta.Text;
+                    Response.Redirect("/index.aspx");
+                }
+                else
+                {
+                    lblmesaj.Visible = true;
+                }
+                conn.Close();
             }
-            else
+            catch (Exception)
             {
+                lblmesaj.Text = "Bağlantınızı kontrol edip tekrar deneyiniz.";
                 lblmesaj.Visible = true;
             }
-            conn.Close();
+           
         }
 
         protected void btnkaydol_Click(object sender, EventArgs e)
