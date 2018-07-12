@@ -5,6 +5,7 @@
 <head runat="server">
     <title>Giriş Yap</title>
     <link href="CustomCSS/loginStyle.css" rel="stylesheet" />
+    <link href="CustomCSS/etiket.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -26,8 +27,8 @@
                         <asp:Button CssClass="btnGirisKaydol" ID="btngiris" runat="server" Text="Giriş Yap" OnClick="btngiris_Click" />
                         <br />
                         <br />
-                        <asp:Button CssClass="btnGirisKaydol" ID="btnkaydol" runat="server" Text="Kaydol" />
-                        <asp:Label ID="lblmesaj" runat="server" Text="Hatalı giriş yaptınız." Visible="false"></asp:Label>
+                        <asp:Button CssClass="btnGirisKaydol" ID="btnkaydol" runat="server" Text="Kaydol" Onclick="btnkaydol_Click"/>
+                        <div style="margin-top:7%;"><asp:Label ID="lblmesaj" runat="server" Text="* Hatalı giriş yaptınız." Visible="false"></asp:Label></div>
                     </form>
                 </div>
                 <div class="form">
