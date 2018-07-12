@@ -9,19 +9,24 @@ namespace zeytin
 {
     public partial class Master : System.Web.UI.MasterPage
     {
+        
+        public void CikisYap()
+        {
+            Session.Abandon();
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void GirisYapBtn_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("/girisYap.aspx");
-        }
-
-        protected void KaydolBtn_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("/Kaydol.aspx");
+            if (Session["Kullanici"]!=null)
+            {
+                GirisYapBtn.InnerText = Session["Kullanici"].ToString();
+                GirisYapBtn.HRef = "profilim.aspx";
+                KaydolBtn.InnerText = "Çıkış";   
+                KaydolBtn.HRef = "/cikis.aspx";
+                divara.Style.Add("margin-left","20%");
+            }
+            
 
         }
     }

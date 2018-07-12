@@ -13,49 +13,49 @@ namespace zeytin {
     public partial class profilim {
         
         /// <summary>
-        /// ad control.
+        /// txtad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad;
+        protected global::System.Web.UI.WebControls.TextBox txtad;
         
         /// <summary>
-        /// parola control.
+        /// txtparola control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox parola;
+        protected global::System.Web.UI.WebControls.TextBox txtparola;
         
         /// <summary>
-        /// eposta control.
+        /// txteposta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox eposta;
+        protected global::System.Web.UI.WebControls.TextBox txteposta;
         
         /// <summary>
-        /// tel control.
+        /// txttel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tel;
+        protected global::System.Web.UI.WebControls.TextBox txttel;
         
         /// <summary>
-        /// adres control.
+        /// txtadres control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox adres;
+        protected global::System.Web.UI.WebControls.TextBox txtadres;
         
         /// <summary>
         /// profilDegistir control.
@@ -65,5 +65,14 @@ namespace zeytin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button profilDegistir;
+        
+        /// <summary>
+        /// lblmesaj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblmesaj;
     }
 }

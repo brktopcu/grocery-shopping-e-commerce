@@ -97,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="w3l_banner_nav_right_banner">
                                     <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
                                     <div style="margin-left:80%" class="more">
-                                        <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
+                                        <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
                                     </div>
                                 </div>
                             </li>
@@ -105,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="w3l_banner_nav_right_banner1">
                                     <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
                                     <div style="margin-left:80%" class="more">
-                                        <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
+                                        <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
                                     </div>
                                 </div>
                             </li>
@@ -113,7 +113,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="w3l_banner_nav_right_banner2">
                                     <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
                                     <div style="margin-left:80%" class="more">
-                                        <a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
+                                        <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
                                     </div>
                                 </div>
                             </li>

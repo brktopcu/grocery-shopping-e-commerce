@@ -51,7 +51,7 @@ namespace zeytin
                     }
                    
                 }
-                catch (Exception ex)
+                catch (Exception )
                 {
                     lblmesaj.Text = "* Bir hata oluştu.";
                     lblmesaj.Visible = true;
