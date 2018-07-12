@@ -6,8 +6,10 @@
 <head runat="server">
     <title>Kaydol</title>
     <link href="CustomCSS/loginStyle.css" rel="stylesheet" />
+    
 </head>
 <body>
+  
     <!-- login -->
     <div class="w3_login">
         <h3>Kaydol</h3>

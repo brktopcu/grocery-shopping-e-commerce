@@ -218,6 +218,7 @@
     <Content Include="index.aspx" />
     <Content Include="Kaydol.aspx" />
     <Content Include="Onay.aspx" />
+    <Content Include="profilim.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -312,6 +313,13 @@
     </Compile>
     <Compile Include="Onay.aspx.designer.cs">
       <DependentUpon>Onay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profilim.aspx.cs">
+      <DependentUpon>profilim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profilim.aspx.designer.cs">
+      <DependentUpon>profilim.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tarif.aspx.cs">
