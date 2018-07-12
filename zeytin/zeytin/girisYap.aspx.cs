@@ -38,5 +38,10 @@ namespace zeytin
             }
             conn.Close();
         }
+
+        protected void btnkaydol_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Kaydol.aspx");
+        }
     }
 }
