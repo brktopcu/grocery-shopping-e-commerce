@@ -22,8 +22,8 @@
                 <div class="form">
                     <h2>Lütfen hesabınıza giriş yapın.</h2>
                     <form runat="server" action="#" method="post">
-                        <asp:TextBox ID="txteposta" runat="server" CssClass="txtGirisKaydol" placeholder="E-posta"></asp:TextBox>
-                        <asp:TextBox ID="txtsifre" runat="server" CssClass="txtGirisKaydol" placeholder="Parola"></asp:TextBox>
+                        <asp:TextBox ID="txteposta" runat="server" CssClass="txtGirisKaydol" placeholder="E-posta" TextMode="Email"></asp:TextBox>
+                        <asp:TextBox ID="txtsifre" runat="server" CssClass="txtGirisKaydol" placeholder="Parola" TextMode="Password"></asp:TextBox>
                         <asp:Button CssClass="btnGirisKaydol" ID="btngiris" runat="server" Text="Giriş Yap" OnClick="btngiris_Click" />
                         <br />
                         <br />
