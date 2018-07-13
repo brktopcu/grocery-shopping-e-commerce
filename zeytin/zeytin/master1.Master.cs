@@ -9,12 +9,6 @@ namespace zeytin
 {
     public partial class Master : System.Web.UI.MasterPage
     {
-        
-        public void CikisYap()
-        {
-            Session.Abandon();
-        }
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -24,7 +18,8 @@ namespace zeytin
                 GirisYapBtn.HRef = "profilim.aspx";
                 KaydolBtn.InnerText = "Çıkış";   
                 KaydolBtn.HRef = "/cikis.aspx";
-                divara.Style.Add("margin-left","20%");
+                divara.Style.Add("margin-left","6%");
+                divbtn.Style.Add("margin-left","6%");
             }
             
 
