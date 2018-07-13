@@ -5,14 +5,14 @@ html, body {
     background: #ffffff;
 }
 
-#sebze:hover {
+.sebze{
+    color:black;
+}
+.sebze:hover {
     color: #FA1818;
     cursor:pointer;
 }
-#meyve:hover {
-    color: #FA1818;
-    cursor: pointer;
-}
+
 
 ul li, ol li {
     font-size: 14px;

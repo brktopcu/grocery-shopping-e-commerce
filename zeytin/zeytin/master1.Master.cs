@@ -20,6 +20,7 @@ namespace zeytin
                 KaydolBtn.HRef = "/cikis.aspx";
                 divara.Style.Add("margin-left","6%");
                 divbtn.Style.Add("margin-left","6%");
+                
             }
             
 

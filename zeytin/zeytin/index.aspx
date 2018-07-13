@@ -87,7 +87,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- //header -->
         <!-- banner -->
         <div class="banner">
-           
+
 
             <div>
                 <section class="slider">
@@ -96,7 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li>
                                 <div class="w3l_banner_nav_right_banner">
                                     <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
-                                    <div style="margin-left:80%" class="more">
+                                    <div style="margin-left: 80%" class="more">
                                         <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li>
                                 <div class="w3l_banner_nav_right_banner1">
                                     <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
-                                    <div style="margin-left:80%" class="more">
+                                    <div style="margin-left: 80%" class="more">
                                         <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
                                     </div>
                                 </div>
@@ -112,7 +112,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li>
                                 <div class="w3l_banner_nav_right_banner2">
                                     <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
-                                    <div style="margin-left:80%" class="more">
+                                    <div style="margin-left: 80%" class="more">
                                         <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
                                     </div>
                                 </div>
@@ -191,83 +191,173 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </script>
         </div>
         <!-- top-brands -->
-        <div class="top-brands">
-            <div class="container">
-                       
-                <h3><a ID="sebze">Sebzeler</a> / <a ID="meyve">Meyveler</a></h3>
-                
-                <!---728x90--->
-                <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
-                <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
-                    <script>
-                        var allowedNumberOfEboundDynamicAdds = 4;
-                        var sizesEboundDynamicAdsDesktop = ['728x90'];
-                        var sizesEboundDynamicAdsTablet = ['728x90'];
-                        var sizesEboundDynamicAdsMobile = ['320x100'];
-                        eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
+        <form id="formBtn" runat="server" method="post">
+            <div class="top-brands">
+                <div class="container">
 
-                        if (typeof user_tag_config == 'undefined') {
-                            var user_tag_config = {};
-                        }
-                        user_tag_config['ebound_header_tag'] = {};
-                        user_tag_config['ebound_header_tag']['desktop'] = {};
-                        user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
-                        user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
-                        user_tag_config['ebound_header_tag']['tablet'] = {};
-                        user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
-                        user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
-                        user_tag_config['ebound_header_tag']['mobile'] = {};
-                        user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
-                        user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
-                    </script>
-                </div>
-                <asp:Repeater ID="rpturunler" runat="server">
-                    <ItemTemplate>
-                        <div class="agile_top_brands_grids">
-                            <div class="col-md-3 top_brand_left">
-                                <div class="hover14 column">
-                                    <div class="agile_top_brand_left_grid">
+                    <h3>
+                       <asp:LinkButton ID="sebze" runat="server" CssClass="sebze" OnClick="sebze_Click" >Sebzeler</asp:LinkButton>
+                        /
+                        <asp:LinkButton ID="meyve" runat="server" CssClass="sebze">Meyveler</asp:LinkButton>
+                    </h3>
 
-                                        <div class="agile_top_brand_left_grid1">
-                                            <figure>
-                                                <div class="snipcart-item block">
-                                                    <div class="snipcart-thumb">
-                                                        <a href="single.html">
-                                                            <img title=" " alt=" " src="images/1.png" /></a>
-                                                        <p style="text-align: center">fortune sunflower oil</p>
-                                                        <h4 style="text-align: center">$7.99</h4>
-                                                    </div>
-                                                    <div class="snipcart-details top_brand_home_details">
-                                                        <form action="#" method="post">
-                                                            <fieldset>
-                                                                <input type="hidden" name="cmd" value="_cart" />
-                                                                <input type="hidden" name="add" value="1" />
-                                                                <input type="hidden" name="business" value=" " />
-                                                                <input type="hidden" name="item_name" value="Fortune Sunflower Oil" />
-                                                                <input type="hidden" name="amount" value="7.99" />
-                                                                <input type="hidden" name="discount_amount" value="1.00" />
-                                                                <input type="hidden" name="currency_code" value="USD" />
-                                                                <input type="hidden" name="return" value=" " />
-                                                                <input type="hidden" name="cancel_return" value=" " />
-                                                                <input type="submit" name="submit" value="Add to cart" class="button" />
-                                                            </fieldset>
-                                                        </form>
+                    <!---728x90--->
+                    <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
+                    <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
+                        <script>
+                            var allowedNumberOfEboundDynamicAdds = 4;
+                            var sizesEboundDynamicAdsDesktop = ['728x90'];
+                            var sizesEboundDynamicAdsTablet = ['728x90'];
+                            var sizesEboundDynamicAdsMobile = ['320x100'];
+                            eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
+
+                            if (typeof user_tag_config == 'undefined') {
+                                var user_tag_config = {};
+                            }
+                            user_tag_config['ebound_header_tag'] = {};
+                            user_tag_config['ebound_header_tag']['desktop'] = {};
+                            user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
+                            user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
+                            user_tag_config['ebound_header_tag']['tablet'] = {};
+                            user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
+                            user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
+                            user_tag_config['ebound_header_tag']['mobile'] = {};
+                            user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
+                            user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
+                        </script>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <asp:Repeater ID="rpturunler" runat="server" Visible="true">
+                                <ItemTemplate>
+
+                                    <div class="agile_top_brands_grids col-md-3">
+                                        <div class="top_brand_left">
+                                            <div class="hover14 column">
+                                                <div class="agile_top_brand_left_grid">
+
+                                                    <div class="agile_top_brand_left_grid1">
+                                                        <figure>
+                                                            <div class="snipcart-item block">
+                                                                <div class="snipcart-thumb">
+
+                                                                    <img style="margin-left: 13%" src='<%#Eval("resimYolu")%>' /></a>
+                                                        <p style="text-align: center"><%#Eval("urunAdi") %></p>
+                                                                    <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
+                                                                </div>
+                                                                <div class="snipcart-details top_brand_home_details">
+
+                                                                    <fieldset>
+
+                                                                        <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" />
+                                                                        <asp:Label ID="lblTur" runat="server" Text='<%#Eval("urunTuru") %>' Visible="false"></asp:Label>
+
+                                                                    </fieldset>
+
+                                                                </div>
+                                                            </div>
+                                                        </figure>
                                                     </div>
                                                 </div>
-                                            </figure>
+                                            </div>
                                         </div>
+                                        <div class="clearfix"></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
                         </div>
-                    </ItemTemplate>
-                </asp:Repeater>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <asp:Repeater ID="rptMeyveler" runat="server" Visible="false">
+                                <ItemTemplate>
+
+                                    <div class="agile_top_brands_grids col-md-3">
+                                        <div class="top_brand_left">
+                                            <div class="hover14 column">
+                                                <div class="agile_top_brand_left_grid">
+
+                                                    <div class="agile_top_brand_left_grid1">
+                                                        <figure>
+                                                            <div class="snipcart-item block">
+                                                                <div class="snipcart-thumb">
+
+                                                                    <img style="margin-left: 13%" src='<%#Eval("resimYolu")%>' /></a>
+                                                        <p style="text-align: center"><%#Eval("urunAdi") %></p>
+                                                                    <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
+                                                                </div>
+                                                                <div class="snipcart-details top_brand_home_details">
+
+                                                                    <form id="formBtn" runat="server" method="post">
+                                                                        <fieldset>
+                                                                            <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" />
+                                                                            <asp:Label ID="lblTur" runat="server" Text='<%#Eval("urunTuru") %>' Visible="false"></asp:Label>
+
+                                                                        </fieldset>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <asp:Repeater ID="rptSebzeler" runat="server" Visible="false">
+                                <ItemTemplate>
+
+                                    <div class="agile_top_brands_grids col-md-3">
+                                        <div class="top_brand_left">
+                                            <div class="hover14 column">
+                                                <div class="agile_top_brand_left_grid">
+
+                                                    <div class="agile_top_brand_left_grid1">
+                                                        <figure>
+                                                            <div class="snipcart-item block">
+                                                                <div class="snipcart-thumb">
+
+                                                                    <img style="margin-left: 13%" src='<%#Eval("resimYolu")%>' /></a>
+                                                        <p style="text-align: center"><%#Eval("urunAdi") %></p>
+                                                                    <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
+                                                                </div>
+                                                                <div class="snipcart-details top_brand_home_details">
+                                                                    <form id="formBtn" runat="server" method="post">
+                                                                        <fieldset>
+                                                                            <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" />
+                                                                            <asp:Label ID="lblTur" runat="server" Text='<%#Eval("urunTuru") %>' Visible="false"></asp:Label>
+
+                                                                        </fieldset>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <!-- //top-brands -->
 
-
+        </form>
 
         <!-- footer -->
 

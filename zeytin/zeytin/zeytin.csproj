@@ -205,10 +205,13 @@
     <Content Include="images\8.png" />
     <Content Include="images\9.jpg" />
     <Content Include="images\9.png" />
+    <Content Include="images\armut.png" />
     <Content Include="images\arrow.png" />
     <Content Include="images\card.png" />
     <Content Include="images\cart.png" />
     <Content Include="images\close_1.png" />
+    <Content Include="images\domates.png" />
+    <Content Include="images\elma.png" />
     <Content Include="images\img-sp.png" />
     <Content Include="images\offer.png" />
     <Content Include="images\paypal.png" />
