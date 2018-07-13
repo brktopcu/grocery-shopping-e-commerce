@@ -198,7 +198,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h3>
                        <asp:LinkButton ID="sebze" runat="server" CssClass="sebze" OnClick="sebze_Click" >Sebzeler</asp:LinkButton>
                         /
-                        <asp:LinkButton ID="meyve" runat="server" CssClass="sebze">Meyveler</asp:LinkButton>
+                        <asp:LinkButton ID="meyve" runat="server" CssClass="sebze" OnClick="meyve_Click">Meyveler</asp:LinkButton>
                     </h3>
 
                     <!---728x90--->
@@ -249,10 +249,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                 <div class="snipcart-details top_brand_home_details">
 
                                                                     <fieldset>
-
                                                                         <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" />
-                                                                        <asp:Label ID="lblTur" runat="server" Text='<%#Eval("urunTuru") %>' Visible="false"></asp:Label>
-
                                                                     </fieldset>
 
                                                                 </div>
@@ -290,14 +287,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
-
-                                                                    <form id="formBtn" runat="server" method="post">
                                                                         <fieldset>
                                                                             <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" />
-                                                                            <asp:Label ID="lblTur" runat="server" Text='<%#Eval("urunTuru") %>' Visible="false"></asp:Label>
-
                                                                         </fieldset>
-                                                                    </form>
                                                                 </div>
                                                             </div>
                                                         </figure>
@@ -332,13 +324,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
-                                                                    <form id="formBtn" runat="server" method="post">
                                                                         <fieldset>
                                                                             <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" />
-                                                                            <asp:Label ID="lblTur" runat="server" Text='<%#Eval("urunTuru") %>' Visible="false"></asp:Label>
-
                                                                         </fieldset>
-                                                                    </form>
                                                                 </div>
                                                             </div>
                                                         </figure>
