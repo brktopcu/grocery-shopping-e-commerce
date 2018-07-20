@@ -36,94 +36,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h3>Sepeti<span> Onayla</span></h3>
 
                     <div class="checkout-right">
-                      
-                        <table class="timetable_sub">
-                            <thead>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>Ürün</th>
-                                    <th>Adedi</th>
-                                    <th>Ürün Adı</th>
+                        <asp:Repeater ID="rptsepet" runat="server">
+                            <ItemTemplate>
+                                <table class="timetable_sub">
+                                    <thead>
+                                        <tr>
+                                            <th>No.</th>
+                                            <th>Ürün</th>
+                                            <th>Adedi</th>
+                                            <th>Ürün Adı</th>
 
-                                    <th>Fiyatı</th>
-                                    <th>Çıkar</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="rem1">
-                                    <td class="invert">1</td>
-                                    <td class="invert-image">
-                                        <a>
-                                            <img src="images/1.png" alt=" " class="img-responsive"></a>
-                                    </td>
-                                    <td class="invert">
-                                        <div class="quantity">
-                                            <div class="quantity-select">
-                                                <div class="entry value-minus">&nbsp;</div>
-                                                <div class="entry value"><span>1</span></div>
-                                                <div class="entry value-plus active">&nbsp;</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="invert">Fortune Sunflower Oil</td>
+                                            <th>Fiyatı</th>
+                                            <th>Çıkar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="rem1">
+                                            <td class="invert">1</td>
+                                            <td class="invert-image">
+                                                <a>
+                                                    <img src='<%#Eval("resimYolu")%>' alt=" " class="img-responsive"></a>
+                                            </td>
+                                            <td class="invert">
+                                                <div class="quantity">
+                                                    <div class="quantity-select">
+                                                        <div class="entry value-minus">&nbsp;</div>
+                                                        <div class="entry value"><span>1</span></div>
+                                                        <div class="entry value-plus active">&nbsp;</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="invert"><%#Eval("urunAdi")%></td>
 
-                                    <td class="invert">$290.00</td>
-                                    <td class="invert">
-                                        <div class="rem">
-                                            <div class="close1"></div>
-                                        </div>
+                                            <td class="invert"><%#Eval("fiyat")%></td>
+                                            <td class="invert">
+                                                <div class="rem">
+                                                    <div class="close1"></div>
+                                                </div>
 
-                                    </td>
-                                </tr>
-                                <tr class="rem2">
-                                    <td class="invert">2</td>
-                                    <td class="invert-image"><a>
-                                        <img src="images/3.png" alt=" " class="img-responsive"></a></td>
-                                    <td class="invert">
-                                        <div class="quantity">
-                                            <div class="quantity-select">
-                                                <div class="entry value-minus">&nbsp;</div>
-                                                <div class="entry value"><span>1</span></div>
-                                                <div class="entry value-plus active">&nbsp;</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="invert">Basmati Rise (5 Kg)</td>
+                                            </td>
+                                        </tr>
 
-                                    <td class="invert">$250.00</td>
-                                    <td class="invert">
-                                        <div class="rem">
-                                            <div class="close2"></div>
-                                        </div>
-
-                                    </td>
-                                </tr>
-                                <tr class="rem3">
-                                    <td class="invert">3</td>
-                                    <td class="invert-image"><a>
-                                        <img src="images/2.png" alt=" " class="img-responsive"></a></td>
-                                    <td class="invert">
-                                        <div class="quantity">
-                                            <div class="quantity-select">
-                                                <div class="entry value-minus">&nbsp;</div>
-                                                <div class="entry value"><span>1</span></div>
-                                                <div class="entry value-plus active">&nbsp;</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="invert">Pepsi Soft Drink (2 Ltr)</td>
-
-                                    <td class="invert">$15.00</td>
-                                    <td class="invert">
-                                        <div class="rem">
-                                            <div class="close3"></div>
-                                        </div>
-
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
+                                    </tbody>
+                                </table>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        <asp:ObjectDataSource ID="sepetleDoldur" runat="server"></asp:ObjectDataSource>
                     </div>
                     <div class="checkout-left">
                         <div style="margin-left: 67%" class="col-md-4 checkout-left-basket">

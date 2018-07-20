@@ -196,7 +196,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="container">
 
                     <h3>
-                       <asp:LinkButton ID="sebze" runat="server" CssClass="sebze" OnClick="sebze_Click" >Sebzeler</asp:LinkButton>
+                        <asp:LinkButton ID="sebze" runat="server" CssClass="sebze" OnClick="sebze_Click">Sebzeler</asp:LinkButton>
                         /
                         <asp:LinkButton ID="meyve" runat="server" CssClass="sebze" OnClick="meyve_Click">Meyveler</asp:LinkButton>
                     </h3>
@@ -243,13 +243,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                 <div class="snipcart-thumb">
 
                                                                     <img style="margin-left: 13%" src='<%#Eval("resimYolu")%>' /></a>
-                                                        <p style="text-align: center"><%#Eval("urunAdi") %></p>
+                                                        <p style="text-align: center"><%#Eval("urunAdi")%></p>
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
+                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1"></asp:TextBox>&nbsp;<i style="font: initial; font-size: 11pt;">KG</i>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
 
                                                                     <fieldset>
-                                                                        <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" />
+                                                                        <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" OnClick="btnEkle_Click" CommandArgument='<%#Eval("id")%>' />
+                                                                        <asp:Label ID="lblresimyolu" runat="server" Text='<%#Eval("resimYolu")%>' Visible="false"></asp:Label>
+                                                                        <asp:Label ID="lblurunadi" runat="server" Text='<%#Eval("urunAdi")%>' Visible="false"></asp:Label>
+                                                                        <asp:Label ID="lblfiyat" runat="server" Text='<%#Eval("fiyat")%>' Visible="false"></asp:Label>
                                                                     </fieldset>
 
                                                                 </div>
@@ -287,9 +291,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
-                                                                        <fieldset>
-                                                                            <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" />
-                                                                        </fieldset>
+                                                                    <fieldset>
+                                                                        <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" OnClick="btnEkle_Click" CommandArgument='<%#Eval("id")%>' />
+                                                                        <asp:Label ID="lblresimyolu" runat="server" Text='<%#Eval("resimYolu")%>' Visible="false"></asp:Label>
+                                                                        <asp:Label ID="lblurunadi" runat="server" Text='<%#Eval("urunAdi")%>' Visible="false"></asp:Label>
+                                                                        <asp:Label ID="lblfiyat" runat="server" Text='<%#Eval("fiyat")%>' Visible="false"></asp:Label>
+                                                                    </fieldset>
                                                                 </div>
                                                             </div>
                                                         </figure>
@@ -324,9 +331,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
-                                                                        <fieldset>
-                                                                            <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" />
-                                                                        </fieldset>
+                                                                    <fieldset>
+                                                                        <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" OnClick="btnEkle_Click" CommandArgument='<%#Eval("id")%>' />
+                                                                        <asp:Label ID="lblresimyolu" runat="server" Text='<%#Eval("resimYolu")%>' Visible="false"></asp:Label>
+                                                                        <asp:Label ID="lblurunadi" runat="server" Text='<%#Eval("urunAdi")%>' Visible="false"></asp:Label>
+                                                                        <asp:Label ID="lblfiyat" runat="server" Text='<%#Eval("fiyat")%>' Visible="false"></asp:Label>
+                                                                    </fieldset>
                                                                 </div>
                                                             </div>
                                                         </figure>

@@ -85,5 +85,34 @@ namespace zeytin
 
             }
         }
+            sepet sepetim;
+        public static DataTable sepeticerik;
+        protected void btnEkle_Click(object sender, EventArgs e)
+        {
+            string UrunID = Convert.ToInt16((((Button)sender).CommandArgument)).ToString();
+            var btn = (Button)sender;
+            var currentItem = (RepeaterItem)btn.NamingContainer;
+            Label lblresimyolu = currentItem.FindControl("lblresimyolu") as Label;
+            Label lblurunadi = currentItem.FindControl("lblurunadi") as Label;
+            Label lblfiyat = currentItem.FindControl("lblfiyat") as Label;
+            TextBox txtKacKilo = currentItem.FindControl("txtkackilo") as TextBox;
+
+            if (Session["Sepetim"] == null)
+            {
+                sepetim = new sepet();
+                Session["Sepetim"] = sepetim;
+            }
+            
+            sepetim = (sepet)Session["Sepetim"];
+            sepetim.Ekle(new sepetUrunler(Convert.ToInt32(UrunID),lblurunadi.Text,lblresimyolu.Text,Convert.ToDouble(lblfiyat.Text),Convert.ToInt32(txtKacKilo.Text)));
+            //DataRow dr = sepeticerik.NewRow();
+            //dr["id"] = UrunID;
+            //dr["urunadi"] = Convert.ToString(lblurunadi.Text);
+            //dr["resimyolu"] = Convert.ToString(lblresimyolu.Text);
+            //dr["fiyat"] = Convert.ToDouble(lblfiyat.Text).ToString();
+            //dr["kackilo"] = Convert.ToInt32(txtKacKilo.Text).ToString();
+            //sepeticerik.Rows.Add(dr);
+
+        }
     }
 }
