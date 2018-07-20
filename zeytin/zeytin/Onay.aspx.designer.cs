@@ -13,6 +13,15 @@ namespace zeytin {
     public partial class Onay {
         
         /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
         /// rptsepet control.
         /// </summary>
         /// <remarks>
@@ -22,22 +31,13 @@ namespace zeytin {
         protected global::System.Web.UI.WebControls.Repeater rptsepet;
         
         /// <summary>
-        /// sepetleDoldur control.
+        /// toplam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource sepetleDoldur;
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl toplam;
         
         /// <summary>
         /// btngeridon control.

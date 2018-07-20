@@ -7,7 +7,7 @@ namespace zeytin
 {
     public class sepet
     {
-        private List<sepetUrunler> Urunler { get; set; }
+        public List<sepetUrunler> Urunler { get; set; }
 
 
         public sepet()
@@ -42,7 +42,7 @@ namespace zeytin
         
         public void Cikar(int rowID)
         {
-            Urunler.RemoveAt(rowID);
+            Urunler.Remove();
         }
 
         public void Guncelle(int rowID,int kackilo)
@@ -76,6 +76,8 @@ namespace zeytin
                 }
             }
         }
+
+        
 
 
     }

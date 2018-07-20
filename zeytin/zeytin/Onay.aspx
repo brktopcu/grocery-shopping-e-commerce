@@ -28,69 +28,73 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </head>
 
     <body>
-        <!-- banner -->
-        <div class="banner">
-            <div>
-                <!-- about -->
-                <div class="privacy about">
-                    <h3>Sepeti<span> Onayla</span></h3>
+        <form id="form1" runat="server">
+            <!-- banner -->
+            <div class="banner">
+                <div>
+                    <!-- about -->
+                    <div class="privacy about">
+                        <h3>Sepeti<span> Onayla</span></h3>
 
-                    <div class="checkout-right">
-                        <asp:Repeater ID="rptsepet" runat="server">
-                            <ItemTemplate>
-                                <table class="timetable_sub">
-                                    <thead>
-                                        <tr>
-                                            <th>No.</th>
-                                            <th>Ürün</th>
-                                            <th>Adedi</th>
-                                            <th>Ürün Adı</th>
+                        <div class="checkout-right">
 
-                                            <th>Fiyatı</th>
-                                            <th>Çıkar</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="rem1">
-                                            <td class="invert">1</td>
-                                            <td class="invert-image">
-                                                <a>
-                                                    <img src='<%#Eval("resimYolu")%>' alt=" " class="img-responsive"></a>
-                                            </td>
-                                            <td class="invert">
-                                                <div class="quantity">
-                                                    <div class="quantity-select">
-                                                        <div class="entry value-minus">&nbsp;</div>
-                                                        <div class="entry value"><span>1</span></div>
-                                                        <div class="entry value-plus active">&nbsp;</div>
+                            <table class="timetable_sub">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Ürün</th>
+                                        <th>Adedi</th>
+                                        <th>Ürün Adı</th>
+
+                                        <th>Birim Fiyatı</th>
+                                        <th>Çıkar</th>
+                                    </tr>
+                                </thead>
+                                <asp:Repeater ID="rptsepet" runat="server">
+                                    <ItemTemplate>
+                                        <tbody>
+
+                                            <tr class="rem1">
+                                                <td class="invert">1</td>
+                                                <td class="invert-image">
+                                                    <a>
+                                                        <img src='<%#Eval("resimYolu")%>' alt=" " class="img-responsive"></a>
+                                                </td>
+                                                <td class="invert">
+                                                    <div class="quantity">
+                                                        <div class="quantity-select">
+                                                            <div class="entry value-minus">&nbsp;</div>
+                                                            <div class="entry value"><span><%#Eval("kackilo")%></span></div>
+                                                            <div class="entry value-plus active">&nbsp;</div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td class="invert"><%#Eval("urunAdi")%></td>
+                                                </td>
+                                                <td class="invert"><%#Eval("urunAdi")%></td>
 
-                                            <td class="invert"><%#Eval("fiyat")%></td>
-                                            <td class="invert">
-                                                <div class="rem">
-                                                    <div class="close1"></div>
-                                                </div>
+                                                <td class="invert"><%#Eval("UrunFiyatToplam")%></td>
+                                                <td class="invert">
+                                                    <div class="rem">
+                                                        
+                                                        <asp:Button ID="btnCikar" CssClass="close1" runat="server" BorderStyle="None" OnClick="btnCikar_Click"/>
+                                                    </div>
 
-                                            </td>
-                                        </tr>
+                                                </td>
+                                            </tr>
 
-                                    </tbody>
-                                </table>
-                            </ItemTemplate>
-                        </asp:Repeater>
-                        <asp:ObjectDataSource ID="sepetleDoldur" runat="server"></asp:ObjectDataSource>
-                    </div>
-                    <div class="checkout-left">
-                        <div style="margin-left: 67%" class="col-md-4 checkout-left-basket">
-                            <ul>
-                                <li>Toplam :<span>$84.00</span></li>
-                            </ul>
+                                        </tbody>
+
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </table>
                         </div>
-                        <div class="col-md-8 address_form_agile">
-                            <form id="form1" runat="server">
+                        <div class="checkout-left">
+                            <div style="margin-left: 67%" class="col-md-4 checkout-left-basket">
+                                <ul>
+                                    <li>Toplam :<span id="toplam" runat="server"></span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-8 address_form_agile">
+
 
                                 <div class="container">
 
@@ -103,17 +107,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+
+                            </div>
                         </div>
+
+                        <div class="clearfix"></div>
+
                     </div>
 
-                    <div class="clearfix"></div>
-
                 </div>
-
+                <!-- //about -->
             </div>
-            <!-- //about -->
-        </div>
+        </form>
         <div class="clearfix"></div>
         <!-- //banner -->
         <!-- js -->

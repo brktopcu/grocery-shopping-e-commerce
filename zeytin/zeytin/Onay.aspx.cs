@@ -15,8 +15,9 @@ namespace zeytin
             
             if (!IsPostBack)
             {
-                rptsepet.DataSource = index.sepeticerik;
+                rptsepet.DataSource = index.sepetim.Urunler;
                 rptsepet.DataBind();
+                toplam.InnerText = index.sepetim.AnaToplam.ToString();
             }
 
 
@@ -26,6 +27,11 @@ namespace zeytin
         protected void btngeridon_Click(object sender, EventArgs e)
         {
             Response.Redirect("/index.aspx");
+        }
+
+        protected void btnCikar_Click(object sender, EventArgs e)
+        {
+            index.sepetim.Cikar();
         }
     }
 }
