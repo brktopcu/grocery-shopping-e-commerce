@@ -86,6 +86,7 @@ namespace zeytin
             }
         }
         public static sepet sepetim;
+        public static sepetUrunler urunler;
         protected void btnEkle_Click(object sender, EventArgs e)
         {
             string UrunID = Convert.ToInt16((((Button)sender).CommandArgument)).ToString();
@@ -103,7 +104,8 @@ namespace zeytin
             }
             
             sepetim = (sepet)Session["Sepetim"];
-            sepetim.Ekle(new sepetUrunler(Convert.ToInt32(UrunID),lblurunadi.Text,lblresimyolu.Text,Convert.ToDouble(lblfiyat.Text),Convert.ToInt32(txtKacKilo.Text)));
+            urunler = new sepetUrunler(Convert.ToInt32(UrunID), lblurunadi.Text, lblresimyolu.Text, Convert.ToDouble(lblfiyat.Text), Convert.ToInt32(txtKacKilo.Text));
+            sepetim.Ekle(urunler);
 
         }
     }

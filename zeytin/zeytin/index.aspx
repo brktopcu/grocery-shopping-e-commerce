@@ -245,7 +245,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                     <img style="margin-left: 13%" src='<%#Eval("resimYolu")%>' /></a>
                                                         <p style="text-align: center"><%#Eval("urunAdi")%></p>
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
-                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1"></asp:TextBox>&nbsp;<i style="font: initial; font-size: 11pt;">KG</i>
+                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1" ReadOnly="False"></asp:TextBox>&nbsp;<i style="font: initial; font-size: 11pt;">KG</i>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
 

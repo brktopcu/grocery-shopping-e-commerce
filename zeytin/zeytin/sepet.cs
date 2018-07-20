@@ -34,29 +34,18 @@ namespace zeytin
             {
                 Urunler.Add(item);
             }
-            //else
-            //{
-            //    Urunler[index].KacKilo += Urunler[index].KacKilo;
-            //}
-        }
-        
-        public void Cikar(int rowID)
-        {
-            Urunler.Remove();
-        }
-
-        public void Guncelle(int rowID,int kackilo)
-        {
-            if (kackilo>0)
-            {
-                Urunler[rowID].KacKilo = kackilo;
-            }
             else
             {
-                Cikar(rowID);
+                Urunler[index].KacKilo += Urunler[index].KacKilo;
             }
         }
-
+        
+        public void Cikar(int id)
+        {
+            
+            Urunler = Urunler.Where(yeni => yeni.ID != id).ToList();
+        }
+        
         public double AnaToplam
         {
             get

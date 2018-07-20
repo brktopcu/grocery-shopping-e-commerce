@@ -63,19 +63,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 <td class="invert">
                                                     <div class="quantity">
                                                         <div class="quantity-select">
-                                                            <div class="entry value-minus">&nbsp;</div>
-                                                            <div class="entry value"><span><%#Eval("kackilo")%></span></div>
-                                                            <div class="entry value-plus active">&nbsp;</div>
+                                                            <asp:TextBox ID="txtkackilo" runat="server" Text='<%#Eval("kackilo")%>' BorderStyle="None" style="width:10%; font-size:12pt; text-align:center" ReadOnly="True"></asp:TextBox><i style="font: initial; font-size: 12pt;">KG</i>
                                                         </div>
                                                     </div>
                                                 </td>
                                                 <td class="invert"><%#Eval("urunAdi")%></td>
 
-                                                <td class="invert"><%#Eval("UrunFiyatToplam")%></td>
+                                                <td class="invert"><%#Eval("fiyat")%>&nbsp<i class="fa fa-turkish-lira"></i> </td>
                                                 <td class="invert">
                                                     <div class="rem">
                                                         
                                                         <asp:Button ID="btnCikar" CssClass="close1" runat="server" BorderStyle="None" OnClick="btnCikar_Click"/>
+                                                        <asp:Label ID="lblid" runat="server" Text='<%#Eval("id")%>' Visible="false"></asp:Label>
                                                     </div>
 
                                                 </td>
@@ -100,10 +99,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                     <div class="row">
                                         <div class="col-md-8">
-                                            <asp:Button ID="btngeridon" CssClass="button" Style="display: block; position: relative; padding: 11px 14px; letter-spacing: 2px; font-size: 14pt; margin-left: 63%; background-color: #84c639; border-color: #84c639; font-family: Arial; color: white" runat="server" Text="Alışverişe Dön" BorderStyle="Groove" OnClick="btngeridon_Click" />
+                                            <asp:Button ID="btngeridon" CssClass="button" Style="display: block; position: relative; padding: 11px 14px; letter-spacing: 2px; font-size: 14pt; margin-left: 63%; background-color: #84c639; border-color: #84c639; font-family: Arial; color: white" runat="server" Text="Alışverişe Dön" BorderStyle="None" OnClick="btngeridon_Click" />
                                         </div>
                                         <div class="col-md-4">
-                                            <asp:Button ID="btnsiparis" CssClass="button" Style="display: block; position: relative; padding: 11px 14px; letter-spacing: 1px; font-size: 14pt; margin-left: 26%; background-color: #84c639; border-color: #84c639; font-family: Arial; color: white" runat="server" Text="Siparişi Tamamla" BorderStyle="Groove" />
+                                            <asp:Button ID="btnsiparis" CssClass="button" Style="display: block; position: relative; padding: 11px 14px; letter-spacing: 1px; font-size: 14pt; margin-left: 26%; background-color: #84c639; border-color: #84c639; font-family: Arial; color: white" runat="server" Text="Siparişi Tamamla" BorderStyle="None" />
                                         </div>
                                     </div>
                                 </div>

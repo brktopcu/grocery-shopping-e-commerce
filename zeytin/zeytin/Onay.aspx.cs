@@ -15,9 +15,20 @@ namespace zeytin
             
             if (!IsPostBack)
             {
-                rptsepet.DataSource = index.sepetim.Urunler;
-                rptsepet.DataBind();
-                toplam.InnerText = index.sepetim.AnaToplam.ToString();
+                
+                try
+                {
+                    rptsepet.Visible = true;
+                    rptsepet.DataSource = index.sepetim.Urunler;
+                    rptsepet.DataBind();
+                    toplam.InnerText = index.sepetim.AnaToplam.ToString();
+                }
+                catch (Exception)
+                {
+                    rptsepet.Visible = false;
+                    
+                }
+                
             }
 
 
@@ -31,7 +42,12 @@ namespace zeytin
 
         protected void btnCikar_Click(object sender, EventArgs e)
         {
-            index.sepetim.Cikar();
+            var btn = (Button)sender;
+            var currentItem = (RepeaterItem)btn.NamingContainer;
+            Label lblid = currentItem.FindControl("lblid") as Label;
+            index.sepetim.Cikar(Convert.ToInt32(lblid.Text));
+            Response.Redirect("Onay.aspx");
         }
+
     }
 }
