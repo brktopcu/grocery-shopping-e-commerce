@@ -270,7 +270,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <ul class="pagination justify-content-center" style="display: inline-block">
 
                                             <li class="page-item">
-                                                <asp:LinkButton ID="linkpage" Style="color: #e78200" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
+                                                <asp:LinkButton ID="linkpage" Style="color: #fa1818" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
                                     <%# Container.DataItem %>
 
                                                 </asp:LinkButton>
@@ -300,7 +300,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                     <img style="margin-left: 13%; width: 140px; height: 140px;" src='<%#Eval("resimYolu")%>' /></a>
                                                         <p style="text-align: center"><%#Eval("urunAdi") %></p>
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
-                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1"></asp:TextBox>&nbsp;<i style="font: initial; font-size: 11pt;"><%#Eval("satilmaSekli") %></i>
+                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1"></asp:TextBox>&nbsp;<asp:TextBox ID="txtsatilmasekli" ReadOnly="true" Font-Size="11pt" Style="font: initial; width: 15%" runat="server" Text='<%#Eval("satilmaSekli") %>' BorderStyle="None"></asp:TextBox>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
                                                                     <fieldset>
@@ -332,7 +332,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <ul class="pagination justify-content-center" style="display: inline-block">
 
                                             <li class="page-item">
-                                                <asp:LinkButton ID="linkpage" Style="color: #e78200" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
+                                                <asp:LinkButton ID="linkpage" Style="color: #fa1818" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
                                     <%# Container.DataItem %>
 
                                                 </asp:LinkButton>
@@ -361,7 +361,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                     <img style="margin-left: 13%; width: 140px; height: 140px;" src='<%#Eval("resimYolu")%>' /></a>
                                                         <p style="text-align: center"><%#Eval("urunAdi") %></p>
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
-                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1"></asp:TextBox>&nbsp;<i style="font: initial; font-size: 11pt;"><%#Eval("satilmaSekli") %></i>
+                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1"></asp:TextBox>&nbsp;<asp:TextBox ID="txtsatilmasekli" ReadOnly="true" Font-Size="11pt" Style="font: initial; width: 15%" runat="server" Text='<%#Eval("satilmaSekli") %>' BorderStyle="None"></asp:TextBox>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
                                                                     <fieldset>
@@ -393,7 +393,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <ul class="pagination justify-content-center" style="display: inline-block">
 
                                             <li class="page-item">
-                                                <asp:LinkButton ID="linkpage" Style="color: #e78200" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
+                                                <asp:LinkButton ID="linkpage" Style="color: #fa1818" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
                                     <%# Container.DataItem %>
 
                                                 </asp:LinkButton>

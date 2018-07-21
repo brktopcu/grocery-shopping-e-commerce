@@ -10,7 +10,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="keywords" content="Grocery Store Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-      
+
         <!-- //for-mobile-apps -->
         <link href="Content/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <link href="CustomCSS/myStyle.css" rel="stylesheet" type="text/css" media="all" />
@@ -57,12 +57,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 <td class="invert">1</td>
                                                 <td class="invert-image">
                                                     <a>
-                                                        <img style="width:100px; height:100px;" src='<%#Eval("resimYolu")%>' alt=" " class="img-responsive"></a>
+                                                        <img style="width: 100px; height: 100px;" src='<%#Eval("resimYolu")%>' alt=" " class="img-responsive"></a>
                                                 </td>
                                                 <td class="invert">
                                                     <div class="quantity">
                                                         <div class="quantity-select">
-                                                            <asp:TextBox ID="txtkackilo" runat="server" Text='<%#Eval("kackilo")%>' BorderStyle="None" style="width:10%; font-size:12pt; text-align:center" ReadOnly="True"></asp:TextBox><i style="font: initial; font-size: 12pt;"><%#Eval("satilmaSekli") %></i>
+                                                            <asp:TextBox ID="txtkackilo" runat="server" Text='<%#Eval("kackilo")%>' BorderStyle="None" Style="width: 10%; font-size: 12pt; text-align: center" ReadOnly="True"></asp:TextBox><i style="font: initial; font-size: 12pt;"><%#Eval("satilmaSekli") %></i>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -71,8 +71,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 <td class="invert"><%#Eval("fiyat")%>&nbsp<i class="fa fa-turkish-lira"></i> </td>
                                                 <td class="invert">
                                                     <div class="rem">
-                                                        
-                                                        <asp:Button ID="btnCikar" CssClass="close1" runat="server" BorderStyle="None" OnClick="btnCikar_Click"/>
+
+                                                        <asp:Button ID="btnCikar" CssClass="close1" runat="server" BorderStyle="None" OnClick="btnCikar_Click" />
                                                         <asp:Label ID="lblid" runat="server" Text='<%#Eval("id")%>' Visible="false"></asp:Label>
                                                     </div>
 
@@ -88,7 +88,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <div class="checkout-left">
                             <div style="margin-left: 67%" class="col-md-4 checkout-left-basket">
                                 <ul>
-                                    <li>Toplam :<span id="toplam" runat="server"></span></li>
+                                    <li style="font-size: 13pt">Toplam :<span id="toplam" runat="server"></span><span><i class="fa fa-turkish-lira"></i></span></li>
                                 </ul>
                             </div>
                             <div class="col-md-8 address_form_agile">
@@ -101,7 +101,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             <asp:Button ID="btngeridon" CssClass="button" Style="display: block; position: relative; padding: 11px 14px; letter-spacing: 2px; font-size: 14pt; margin-left: 63%; background-color: #84c639; border-color: #84c639; font-family: Arial; color: white" runat="server" Text="Alışverişe Dön" BorderStyle="None" OnClick="btngeridon_Click" />
                                         </div>
                                         <div class="col-md-4">
-                                            <asp:Button ID="btnsiparis" CssClass="button" Style="display: block; position: relative; padding: 11px 14px; letter-spacing: 1px; font-size: 14pt; margin-left: 26%; background-color: #84c639; border-color: #84c639; font-family: Arial; color: white" runat="server" Text="Siparişi Tamamla" BorderStyle="None" />
+                                            <asp:Button ID="btnsiparis" CssClass="button" Style="display: block; position: relative; padding: 11px 14px; letter-spacing: 1px; font-size: 14pt; margin-left: 26%; background-color: #84c639; border-color: #84c639; font-family: Arial; color: white" runat="server" Text="Siparişi Tamamla" BorderStyle="None" OnClick="btnsiparis_Click" />
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +110,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
 
                         <div class="clearfix"></div>
-
+                        <br />
+                        <div id="divmesaj" runat="server">
+                            <asp:Label ID="lblmesaj" runat="server" Text="Siparişiniz bize ulaştı.En kısa sürede kapınızda olacaktır." Visible="false" ForeColor="Green" Font-Size="X-Large"></asp:Label>
+                        </div>
                     </div>
 
                 </div>

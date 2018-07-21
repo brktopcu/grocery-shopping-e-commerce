@@ -64,7 +64,7 @@
 
 
         </div>
-        <asp:Button ID="profilDegistir" runat="server" Text="Değişiklikleri Onayla" CssClass="linkbtn" Style="width: 15%; margin-left: 41%" BorderStyle="Groove" OnClick="profilDegistir_Click" />
+        <asp:Button ID="profilDegistir" runat="server" Text="Değişiklikleri Onayla" CssClass="linkbtn" Style="width: 15%; font-family:Arial; margin-left: 41%" BorderStyle="None" OnClick="profilDegistir_Click" />
         <br />
         <br />
         <div style="margin-left:40%">
