@@ -14,9 +14,10 @@ namespace zeytin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            if(!IsPostBack)
+            Page.MaintainScrollPositionOnPostBack = true;
+            if (!IsPostBack)
             {
+                
                 SqlConnection conn = new SqlConnection();
                 conn.ConnectionString = ConfigurationManager.ConnectionStrings["Connection"].ConnectionString;
                 conn.Open();
@@ -89,6 +90,7 @@ namespace zeytin
         public static sepetUrunler urunler;
         protected void btnEkle_Click(object sender, EventArgs e)
         {
+            
             string UrunID = Convert.ToInt16((((Button)sender).CommandArgument)).ToString();
             var btn = (Button)sender;
             var currentItem = (RepeaterItem)btn.NamingContainer;
@@ -105,8 +107,8 @@ namespace zeytin
             
             sepetim = (sepet)Session["Sepetim"];
             urunler = new sepetUrunler(Convert.ToInt32(UrunID), lblurunadi.Text, lblresimyolu.Text, Convert.ToDouble(lblfiyat.Text), Convert.ToInt32(txtKacKilo.Text));
-            sepetim.Ekle(urunler);
-
+            sepetim.Ekle(urunler, Convert.ToInt32(txtKacKilo.Text));
+            
         }
     }
 }

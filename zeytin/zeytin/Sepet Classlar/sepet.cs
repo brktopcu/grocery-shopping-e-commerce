@@ -27,7 +27,7 @@ namespace zeytin
             return -1;
         }
 
-        public void Ekle(sepetUrunler item)
+        public void Ekle(sepetUrunler item,int kilo)
         {
             int index = UrunlerIndex(item.ID);
             if (index==-1)
@@ -36,7 +36,7 @@ namespace zeytin
             }
             else
             {
-                Urunler[index].KacKilo += Urunler[index].KacKilo;
+                Urunler[index].KacKilo += kilo;
             }
         }
         
