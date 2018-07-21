@@ -57,12 +57,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                 <td class="invert">1</td>
                                                 <td class="invert-image">
                                                     <a>
-                                                        <img src='<%#Eval("resimYolu")%>' alt=" " class="img-responsive"></a>
+                                                        <img style="width:100px; height:100px;" src='<%#Eval("resimYolu")%>' alt=" " class="img-responsive"></a>
                                                 </td>
                                                 <td class="invert">
                                                     <div class="quantity">
                                                         <div class="quantity-select">
-                                                            <asp:TextBox ID="txtkackilo" runat="server" Text='<%#Eval("kackilo")%>' BorderStyle="None" style="width:10%; font-size:12pt; text-align:center" ReadOnly="True"></asp:TextBox><i style="font: initial; font-size: 12pt;">KG</i>
+                                                            <asp:TextBox ID="txtkackilo" runat="server" Text='<%#Eval("kackilo")%>' BorderStyle="None" style="width:10%; font-size:12pt; text-align:center" ReadOnly="True"></asp:TextBox><i style="font: initial; font-size: 12pt;"><%#Eval("satilmaSekli") %></i>
                                                         </div>
                                                     </div>
                                                 </td>

@@ -14,9 +14,9 @@ namespace zeytin
         public int ID { get; set; }
         public int KacKilo { get; set; }
         public double UrunFiyatToplam { get; set; }
+        public string SatilmaSekli { get; set; }
 
-
-        public sepetUrunler(int id,string urunadi,string resimyolu,double fiyat,int kackilo)
+        public sepetUrunler(int id,string urunadi,string resimyolu,double fiyat,int kackilo,string satilmaSekli)
         {
 
             this.ID = id;
@@ -25,6 +25,7 @@ namespace zeytin
             this.Fiyat = fiyat;
             this.KacKilo = kackilo;
             this.UrunFiyatToplam = fiyat * kackilo;
+            this.SatilmaSekli = satilmaSekli;
         }
     }
 }

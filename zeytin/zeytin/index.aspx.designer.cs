@@ -49,6 +49,15 @@ namespace zeytin {
         protected global::System.Web.UI.WebControls.Repeater rpturunler;
         
         /// <summary>
+        /// rptPaging1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptPaging1;
+        
+        /// <summary>
         /// rptMeyveler control.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace zeytin {
         protected global::System.Web.UI.WebControls.Repeater rptMeyveler;
         
         /// <summary>
+        /// rptPaging2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptPaging2;
+        
+        /// <summary>
         /// rptSebzeler control.
         /// </summary>
         /// <remarks>
@@ -65,5 +83,14 @@ namespace zeytin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptSebzeler;
+        
+        /// <summary>
+        /// rptPaging3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptPaging3;
     }
 }

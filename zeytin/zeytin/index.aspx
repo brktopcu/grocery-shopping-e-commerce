@@ -28,7 +28,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- start-smoth-scrolling -->
         <script type="text/javascript" src="CustomJS/moveTop.js"></script>
         <script type="text/javascript" src="CustomJS/easing.js"></script>
-      
+
     </head>
 
 
@@ -217,7 +217,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
                         </script>
                     </div>
-                    
+
                     <div class="container">
                         <div class="row">
                             <asp:Repeater ID="rpturunler" runat="server" Visible="true">
@@ -233,10 +233,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                             <div class="snipcart-item block">
                                                                 <div class="snipcart-thumb">
 
-                                                                    <img style="margin-left: 13%" src='<%#Eval("resimYolu")%>' /></a>
+                                                                    <img style="margin-left: 13%; width: 140px; height: 140px;" src='<%#Eval("resimYolu")%>' /></a>
                                                         <p style="text-align: center"><%#Eval("urunAdi")%></p>
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
-                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1" ReadOnly="False"></asp:TextBox>&nbsp;<i style="font: initial; font-size: 11pt;">KG</i>
+                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1" ReadOnly="False"></asp:TextBox>&nbsp;<asp:TextBox ID="txtsatilmasekli" ReadOnly="true" Font-Size="11pt" Style="font: initial; width: 15%" runat="server" Text='<%#Eval("satilmaSekli") %>' BorderStyle="None"></asp:TextBox>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
 
@@ -258,8 +258,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </div>
 
                                 </ItemTemplate>
-                            </asp:Repeater>
+                            </asp:Repeater>  
                         </div>
+                        <br />
+                        <div style="overflow: hidden; padding-left: 45%">
+                                <asp:Repeater ID="rptPaging1" OnItemCommand="rptPaging1_ItemCommand" runat="server">
+                                    <ItemTemplate>
+
+
+
+                                        <ul class="pagination justify-content-center" style="display: inline-block">
+
+                                            <li class="page-item">
+                                                <asp:LinkButton ID="linkpage" Style="color: #e78200" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
+                                    <%# Container.DataItem %>
+
+                                                </asp:LinkButton>
+                                            </li>
+                                        </ul>
+
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </div>
                     </div>
 
                     <div class="container">
@@ -277,10 +297,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                             <div class="snipcart-item block">
                                                                 <div class="snipcart-thumb">
 
-                                                                    <img style="margin-left: 13%" src='<%#Eval("resimYolu")%>' /></a>
+                                                                    <img style="margin-left: 13%; width: 140px; height: 140px;" src='<%#Eval("resimYolu")%>' /></a>
                                                         <p style="text-align: center"><%#Eval("urunAdi") %></p>
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
-                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1"></asp:TextBox>&nbsp;<i style="font: initial; font-size: 11pt;">KG</i>
+                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1"></asp:TextBox>&nbsp;<i style="font: initial; font-size: 11pt;"><%#Eval("satilmaSekli") %></i>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
                                                                     <fieldset>
@@ -302,6 +322,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </ItemTemplate>
                             </asp:Repeater>
                         </div>
+                        <br />
+                        <div style="overflow: hidden; padding-left: 45%">
+                                <asp:Repeater ID="rptPaging2" OnItemCommand="rptPaging2_ItemCommand" runat="server">
+                                    <ItemTemplate>
+
+
+
+                                        <ul class="pagination justify-content-center" style="display: inline-block">
+
+                                            <li class="page-item">
+                                                <asp:LinkButton ID="linkpage" Style="color: #e78200" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
+                                    <%# Container.DataItem %>
+
+                                                </asp:LinkButton>
+                                            </li>
+                                        </ul>
+
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </div>
                     </div>
                     <div class="container">
                         <div class="row">
@@ -318,10 +358,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                             <div class="snipcart-item block">
                                                                 <div class="snipcart-thumb">
 
-                                                                    <img style="margin-left: 13%" src='<%#Eval("resimYolu")%>' /></a>
+                                                                    <img style="margin-left: 13%; width: 140px; height: 140px;" src='<%#Eval("resimYolu")%>' /></a>
                                                         <p style="text-align: center"><%#Eval("urunAdi") %></p>
                                                                     <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
-                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1"></asp:TextBox>&nbsp;<i style="font: initial; font-size: 11pt;">KG</i>
+                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1"></asp:TextBox>&nbsp;<i style="font: initial; font-size: 11pt;"><%#Eval("satilmaSekli") %></i>
                                                                 </div>
                                                                 <div class="snipcart-details top_brand_home_details">
                                                                     <fieldset>
@@ -343,6 +383,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </ItemTemplate>
                             </asp:Repeater>
                         </div>
+                        <br />
+                        <div style="overflow: hidden; padding-left: 45%">
+                                <asp:Repeater ID="rptPaging3" OnItemCommand="rptPaging3_ItemCommand" runat="server">
+                                    <ItemTemplate>
+
+
+
+                                        <ul class="pagination justify-content-center" style="display: inline-block">
+
+                                            <li class="page-item">
+                                                <asp:LinkButton ID="linkpage" Style="color: #e78200" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
+                                    <%# Container.DataItem %>
+
+                                                </asp:LinkButton>
+                                            </li>
+                                        </ul>
+
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </div>
                     </div>
 
                 </div>
@@ -358,7 +418,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <script src="Scripts/bootstrap.min.js"></script>
         <script src="js/minicart.min.js"></script>
         <script src="CustomJS/minicart.js"></script>
-      
+
     </body>
     </html>
 
