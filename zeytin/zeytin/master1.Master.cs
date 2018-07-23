@@ -25,6 +25,15 @@ namespace zeytin
                 divbtn.Style.Add("margin-left","6%");
                 
             }
+            if (Session["Admin"]!=null)
+            {
+                GirisYapBtn.InnerText = Session["Admin"].ToString();
+                GirisYapBtn.HRef = "admin.aspx";
+                KaydolBtn.InnerText = "Çıkış";
+                KaydolBtn.HRef = "/cikis.aspx";
+
+                divbtn.Style.Add("margin-left", "6%");
+            }
             
 
         }

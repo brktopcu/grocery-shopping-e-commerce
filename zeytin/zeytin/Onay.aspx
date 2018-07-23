@@ -86,9 +86,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </table>
                         </div>
                         <div class="checkout-left">
-                            <div style="margin-left: 67%" class="col-md-4 checkout-left-basket">
+                            <span><i class="fa fa-turkish-lira"></i></span>
+                            <div style="margin-left: 65%" class="col-md-4 checkout-left-basket">
                                 <ul>
-                                    <li style="font-size: 13pt">Toplam :<span id="toplam" runat="server"></span><span><i class="fa fa-turkish-lira"></i></span></li>
+                                    <li style="font-size: 13pt">Toplam :<span id="toplam" runat="server"></span></li>
                                 </ul>
                             </div>
                             <div class="col-md-8 address_form_agile">

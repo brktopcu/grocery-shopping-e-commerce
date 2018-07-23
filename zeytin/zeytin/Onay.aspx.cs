@@ -76,10 +76,10 @@ namespace zeytin
                     SqlDataAdapter da = new SqlDataAdapter(cmd2);
                     da.Fill(ds);
                     int kullaniciID = Convert.ToInt32(ds.Tables[0].Rows[0]["id"]);
-                    cmd1.CommandText = "Insert into Siparis(kullaniciID,siparisTarihi,toplamFiyat) values (@kullaniciID,@siparisTarihi,@toplamFiyat)";
+                    cmd1.CommandText = "Insert into Siparis(kullaniciID,siparisTarihi,toplamFiyat,iletildiMi) values (@kullaniciID,@siparisTarihi,@toplamFiyat,0)";
                     SqlDataAdapter da2 = new SqlDataAdapter(cmd1);
                     cmd1.Parameters.AddWithValue("@kullaniciID", kullaniciID);
-                    cmd1.Parameters.AddWithValue("@siparisTarihi", DateTime.Today.ToString("g"));
+                    cmd1.Parameters.AddWithValue("@siparisTarihi", DateTime.Today.ToShortDateString());
                     cmd1.Parameters.AddWithValue("@toplamFiyat", index.sepetim.AnaToplam);
                     cmd1.ExecuteNonQuery();
                     cmd3.CommandText = "SELECT TOP 1 id FROM Siparis ORDER BY id DESC";
@@ -101,7 +101,6 @@ namespace zeytin
                     }
 
                     index.sepetim.Urunler.Clear();
-                    Response.Redirect("Onay.aspx");
                     lblmesaj.Visible = true;
                 }
                 else
