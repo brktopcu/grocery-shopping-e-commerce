@@ -115,11 +115,7 @@ input[type="submit"], #PPMiniCart .minicart-submit, .w3ls_vegetables ul li a, in
         display: block;
     }
 
-.w3l_search {
-    float: left;
-    width: 27%;
-    margin: .1em 0 0em 10em;
-}
+
 
     .w3l_search input[type="text"] {
         outline: none;
@@ -135,16 +131,28 @@ input[type="submit"], #PPMiniCart .minicart-submit, .w3ls_vegetables ul li a, in
     .w3l_search input[type="submit"] {
         outline: none;
         padding: 10px 0 9px;
+        width: 6%;
+        border: 1px solid;
+        position: relative;
+        background: url(../images/img-ara.png) no-repeat 14px 5px #FA1818;
+    }
+
+        .w3l_search input[type="submit"]:hover 
+        {
+            background: url(../images/img-ara.png) no-repeat 14px 5px #84C639;
+        }
+    .arama {
+        outline: none;
+        padding: 10px 0 9px;
         width: 15%;
         border: 1px solid;
         position: relative;
-        background: url(../images/img-sp.png) no-repeat 14px 5px #FA1818;
+        background: url(../images/img-ara.png) no-repeat 14px 5px #FA1818;
     }
 
-        .w3l_search input[type="submit"]:hover {
-            background: url(../images/img-sp.png) no-repeat 14px 5px #84C639;
+        .arama:hover {
+            background: url(../images/img-ara.png) no-repeat 14px 5px #84C639;
         }
-
 .w3l_header_right {
     float: left;
     padding-left: 5em;
@@ -2830,9 +2838,7 @@ ul.wmuSliderPagination {
 }
 
 @media (max-width:1366px) {
-    .w3l_search {
-        margin: .1em 0 0em 6em;
-    }
+   
 
     .w3l_banner_nav_right_banner1, .w3l_banner_nav_right_banner, .w3l_banner_nav_right_banner2 {
         padding: 7em 13em 0 0;
@@ -2965,19 +2971,9 @@ ul.wmuSliderPagination {
         padding: .6em 1em;
     }
 
-    .w3l_search {
-        margin: .1em 0 0em 3em;
-        width: 30%;
-    }
+    
 
-        .w3l_search input[type="submit"] {
-            background: url(../images/img-sp.png) no-repeat 6px 5px #FA1818;
-        }
-
-            .w3l_search input[type="submit"]:hover {
-                background: url(../images/img-sp.png) no-repeat 6px 5px #84C639;
-            }
-
+       
     .product_list_header {
         margin-left: 2em;
     }

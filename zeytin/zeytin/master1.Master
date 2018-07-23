@@ -80,18 +80,15 @@
 </script>
 <body>
     <div class="agileits_header">
-        <div id="divara" runat="server" style="margin-left: 8%" class="w3l_search">
-            <form action="#" method="post">
-                <input type="text" name="Product" value="Ürün ara..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Ürün ara...';}" required="">
-                <input type="submit" value=" ">
-            </form>
-        </div>
-        <div class="product_list_header" style="margin-left:15%">
+         <a style="color:red;font-size:21pt; font-family:Arial; float:left;margin-left:8%" href="index.aspx">Bizim Manav</a>
+        <div class="product_list_header" style="margin-left:26%">
+         
             <form action="#" method="post" class="last">
                 <fieldset>
+                   
                     <input type="hidden" name="cmd" value="_cart" />
                     <input type="hidden" name="display" value="1" />
-                    <input id="btnsepet" type="button" value="Sepetim           " class="button" onclick="sepetegit()" />
+                    <input style="margin-left:15%" id="btnsepet" type="button" value="Sepetim           " class="button" onclick="sepetegit()" />
                 </fieldset>
             </form>
         </div>

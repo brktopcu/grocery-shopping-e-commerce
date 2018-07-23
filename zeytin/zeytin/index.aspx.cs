@@ -18,12 +18,16 @@ namespace zeytin
         int PageNumber2 = 0;
 
         int PageNumber3 =0;
+
+        public static int PageNumber4 = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.MaintainScrollPositionOnPostBack = true;
             rptPaging1.Visible = true;
             rptPaging2.Visible = false;
             rptPaging3.Visible = false;
+            rptPaging4.Visible = false;
+            rptAra.Visible = false;
             rpturunler.Visible = true;
             rptMeyveler.Visible = false;
             rptSebzeler.Visible = false;
@@ -43,6 +47,8 @@ namespace zeytin
             rptPaging1.Visible = false;
             rptPaging2.Visible = false;
             rptPaging3.Visible = true;
+            rptPaging4.Visible = false;
+            rptAra.Visible = false;
             rpturunler.Visible = false;
             rptMeyveler.Visible = false;
             rptSebzeler.Visible = true;
@@ -58,6 +64,8 @@ namespace zeytin
             rptPaging1.Visible = false;
             rptPaging2.Visible = true;
             rptPaging3.Visible = false;
+            rptPaging4.Visible = false;
+            rptAra.Visible = false;
             rpturunler.Visible = false;
             rptMeyveler.Visible = true;
             rptSebzeler.Visible = false;
@@ -67,6 +75,8 @@ namespace zeytin
                 BindRptMeyveler();
             }
         }
+
+
         public static sepet sepetim;
         public static sepetUrunler urunler;
         protected void btnEkle_Click(object sender, EventArgs e)
@@ -99,7 +109,7 @@ namespace zeytin
             conn.ConnectionString = ConfigurationManager.ConnectionStrings["Connection"].ConnectionString;
             SqlCommand cmd = new SqlCommand();
             conn.Open();
-            cmd.CommandText = "select * from Urunler where varMi = 1";
+            cmd.CommandText = "select * from Urunler where varMi=1 order by urunAdi";
             cmd.Connection = conn;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
@@ -143,7 +153,7 @@ namespace zeytin
             conn2.ConnectionString = ConfigurationManager.ConnectionStrings["Connection"].ConnectionString;
             conn2.Open();
             SqlCommand cmd2 = new SqlCommand();
-            cmd2.CommandText = "select * from Urunler where varMi = 1 and urunTuru=0";
+            cmd2.CommandText = "select * from Urunler where varMi = 1 and urunTuru=0 order by urunAdi";
             cmd2.Connection = conn2;
             SqlDataAdapter da = new SqlDataAdapter(cmd2);
             DataTable dt = new DataTable();
@@ -188,7 +198,7 @@ namespace zeytin
             conn2.ConnectionString = ConfigurationManager.ConnectionStrings["Connection"].ConnectionString;
             conn2.Open();
             SqlCommand cmd2 = new SqlCommand();
-            cmd2.CommandText = "select * from Urunler where varMi = 1 and urunTuru=1";
+            cmd2.CommandText = "select * from Urunler where varMi = 1 and urunTuru=1 order by urunAdi";
             cmd2.Connection = conn2;
             SqlDataAdapter da = new SqlDataAdapter(cmd2);
             DataTable dt = new DataTable();
@@ -225,11 +235,59 @@ namespace zeytin
             conn2.Close();
         }
 
+        public void BindRptAra()
+        {
+            
+            SqlConnection conn2 = new SqlConnection();
+            conn2.ConnectionString = ConfigurationManager.ConnectionStrings["Connection"].ConnectionString;
+            conn2.Open();
+            SqlCommand cmd4 = new SqlCommand();
+            cmd4.CommandText = "select * from Urunler where varMi=1 and urunAdi like @aranan + '%' order by urunAdi";
+            cmd4.Connection = conn2;
+            cmd4.Parameters.AddWithValue("@aranan",txtara.Text);
+            SqlDataAdapter da = new SqlDataAdapter(cmd4);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+
+            //Create the PagedDataSource that will be used in paging
+            PagedDataSource pgitems = new PagedDataSource();
+            pgitems.DataSource = dt.DefaultView;
+            pgitems.AllowPaging = true;
+
+            //Control page size from here 
+            pgitems.PageSize = 12;
+            pgitems.CurrentPageIndex = PageNumber4;
+            if (pgitems.PageCount > 1)
+            {
+                rptPaging4.Visible = true;
+                ArrayList pages = new ArrayList();
+                for (int i = 0; i <= pgitems.PageCount - 1; i++)
+                {
+                    pages.Add((i + 1).ToString());
+                }
+                rptPaging4.DataSource = pages;
+                rptPaging4.DataBind();
+            }
+            else
+            {
+                rptPaging4.Visible = false;
+            }
+
+            //Finally, set the datasource of the repeater
+            rptAra.DataSource = pgitems;
+            rptAra.DataBind();
+            conn2.Close();
+
+        }
+
         protected void rptPaging1_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             rptPaging1.Visible = true;
             rptPaging2.Visible = false;
             rptPaging3.Visible = false;
+            rptPaging4.Visible = false;
+            rptAra.Visible = false;
             rpturunler.Visible = true;
             rptMeyveler.Visible = false;
             rptSebzeler.Visible = false;
@@ -242,6 +300,8 @@ namespace zeytin
             rptPaging1.Visible = false;
             rptPaging2.Visible = true;
             rptPaging3.Visible = false;
+            rptPaging4.Visible = false;
+            rptAra.Visible = false;
             rpturunler.Visible = false;
             rptMeyveler.Visible = true;
             rptSebzeler.Visible = false;
@@ -254,11 +314,44 @@ namespace zeytin
             rptPaging1.Visible = false;
             rptPaging2.Visible = false;
             rptPaging3.Visible = true;
+            rptPaging4.Visible = false;
+            rptAra.Visible = false;
             rpturunler.Visible = false;
             rptMeyveler.Visible = false;
             rptSebzeler.Visible = true;
             PageNumber3 = Convert.ToInt32(e.CommandArgument) - 1;
             BindRptSebzeler();
+        }
+
+        protected void rptPaging4_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            rptPaging1.Visible = false;
+            rptPaging2.Visible = false;
+            rptPaging3.Visible = false;
+            rptPaging4.Visible = true;
+            rpturunler.Visible = false;
+            rptMeyveler.Visible = false;
+            rptSebzeler.Visible = false;
+            rptAra.Visible = true;
+            PageNumber4 = Convert.ToInt32(e.CommandArgument) - 1;
+            BindRptAra();
+        }
+
+        protected void btnara_Click(object sender, EventArgs e)
+        {
+            rptPaging1.Visible = false;
+            rptPaging2.Visible = false;
+            rptPaging3.Visible = false;
+            rptPaging4.Visible = true;
+            rptAra.Visible = true;
+            rpturunler.Visible = false;
+            rptMeyveler.Visible = false;
+            rptSebzeler.Visible = false;
+
+            if (IsPostBack)
+            {
+                BindRptAra();
+            }
         }
     }
 }

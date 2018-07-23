@@ -69,120 +69,121 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         ga('send', 'pageview');
     </script>
     <body>
-        <!-- header -->
-
-        <!-- script-for sticky-nav -->
-
-        <!-- //script-for sticky-nav -->
-
-        <!-- //header -->
-        <!-- banner -->
-        <div class="banner">
-
-
-            <div>
-                <section class="slider">
-                    <div class="flexslider">
-                        <ul class="slides">
-                            <li>
-                                <div class="w3l_banner_nav_right_banner">
-                                    <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
-                                    <div style="margin-left: 80%" class="more">
-                                        <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="w3l_banner_nav_right_banner1">
-                                    <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
-                                    <div style="margin-left: 80%" class="more">
-                                        <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="w3l_banner_nav_right_banner2">
-                                    <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
-                                    <div style="margin-left: 80%" class="more">
-                                        <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!-- flexSlider -->
-                <link href="CustomCSS/flexSlider.css" rel="stylesheet" type="text/css" media="screen" property="" />
-
-                <script defer src="CustomJS/flexslider.js"></script>
-                <script type="text/javascript">
-                    $(window).load(function () {
-                        $('.flexslider').flexslider({
-                            animation: "slide",
-                            start: function (slider) {
-                                $('body').removeClass('loading');
-                            }
-                        });
-                    });
-                </script>
-                <!-- //flexSlider -->
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <!---728x90--->
-        <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
-        <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
-            <script>
-                var allowedNumberOfEboundDynamicAdds = 4;
-                var sizesEboundDynamicAdsDesktop = ['728x90'];
-                var sizesEboundDynamicAdsTablet = ['728x90'];
-                var sizesEboundDynamicAdsMobile = ['320x100'];
-                eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
-
-                if (typeof user_tag_config == 'undefined') {
-                    var user_tag_config = {};
-                }
-                user_tag_config['ebound_header_tag'] = {};
-                user_tag_config['ebound_header_tag']['desktop'] = {};
-                user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
-                user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
-                user_tag_config['ebound_header_tag']['tablet'] = {};
-                user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
-                user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
-                user_tag_config['ebound_header_tag']['mobile'] = {};
-                user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
-                user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
-            </script>
-        </div>
-        <!-- banner -->
-
-        <!---728x90--->
-        <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
-        <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
-            <script>
-                var allowedNumberOfEboundDynamicAdds = 4;
-                var sizesEboundDynamicAdsDesktop = ['728x90'];
-                var sizesEboundDynamicAdsTablet = ['728x90'];
-                var sizesEboundDynamicAdsMobile = ['320x100'];
-                eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
-
-                if (typeof user_tag_config == 'undefined') {
-                    var user_tag_config = {};
-                }
-                user_tag_config['ebound_header_tag'] = {};
-                user_tag_config['ebound_header_tag']['desktop'] = {};
-                user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
-                user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
-                user_tag_config['ebound_header_tag']['tablet'] = {};
-                user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
-                user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
-                user_tag_config['ebound_header_tag']['mobile'] = {};
-                user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
-                user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
-            </script>
-        </div>
-        <!-- top-brands -->
         <form id="formBtn" runat="server" method="post">
+            <!-- header -->
+
+            <!-- script-for sticky-nav -->
+
+            <!-- //script-for sticky-nav -->
+
+            <!-- //header -->
+            <!-- banner -->
+            <div class="banner">
+
+
+                <div>
+                    <section class="slider">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <div class="w3l_banner_nav_right_banner">
+                                        <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
+                                        <div style="margin-left: 80%" class="more">
+                                            <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="w3l_banner_nav_right_banner1">
+                                        <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
+                                        <div style="margin-left: 80%" class="more">
+                                            <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="w3l_banner_nav_right_banner2">
+                                        <h3>Melih Usta'dan <span>Günün</span> Yemeği.</h3>
+                                        <div style="margin-left: 80%" class="more">
+                                            <a href="tarif.aspx" class="button--saqui button--round-l button--text-thick" data-text="Tarifi Gör">Tarifi Gör</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- flexSlider -->
+                    <link href="CustomCSS/flexSlider.css" rel="stylesheet" type="text/css" media="screen" property="" />
+
+                    <script defer src="CustomJS/flexslider.js"></script>
+                    <script type="text/javascript">
+                        $(window).load(function () {
+                            $('.flexslider').flexslider({
+                                animation: "slide",
+                                start: function (slider) {
+                                    $('body').removeClass('loading');
+                                }
+                            });
+                        });
+                    </script>
+                    <!-- //flexSlider -->
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!---728x90--->
+            <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
+            <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
+                <script>
+                    var allowedNumberOfEboundDynamicAdds = 4;
+                    var sizesEboundDynamicAdsDesktop = ['728x90'];
+                    var sizesEboundDynamicAdsTablet = ['728x90'];
+                    var sizesEboundDynamicAdsMobile = ['320x100'];
+                    eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
+
+                    if (typeof user_tag_config == 'undefined') {
+                        var user_tag_config = {};
+                    }
+                    user_tag_config['ebound_header_tag'] = {};
+                    user_tag_config['ebound_header_tag']['desktop'] = {};
+                    user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
+                    user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
+                    user_tag_config['ebound_header_tag']['tablet'] = {};
+                    user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
+                    user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
+                    user_tag_config['ebound_header_tag']['mobile'] = {};
+                    user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
+                    user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
+                </script>
+            </div>
+            <!-- banner -->
+
+            <!---728x90--->
+            <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
+            <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
+                <script>
+                    var allowedNumberOfEboundDynamicAdds = 4;
+                    var sizesEboundDynamicAdsDesktop = ['728x90'];
+                    var sizesEboundDynamicAdsTablet = ['728x90'];
+                    var sizesEboundDynamicAdsMobile = ['320x100'];
+                    eboundAdsTagByDevice(sizesEboundDynamicAdsDesktop, sizesEboundDynamicAdsTablet, sizesEboundDynamicAdsMobile, 'ebound_header_tag');
+
+                    if (typeof user_tag_config == 'undefined') {
+                        var user_tag_config = {};
+                    }
+                    user_tag_config['ebound_header_tag'] = {};
+                    user_tag_config['ebound_header_tag']['desktop'] = {};
+                    user_tag_config['ebound_header_tag']['desktop']['cpm'] = '';
+                    user_tag_config['ebound_header_tag']['desktop']['adsCode'] = '';
+                    user_tag_config['ebound_header_tag']['tablet'] = {};
+                    user_tag_config['ebound_header_tag']['tablet']['cpm'] = '';
+                    user_tag_config['ebound_header_tag']['tablet']['adsCode'] = '';
+                    user_tag_config['ebound_header_tag']['mobile'] = {};
+                    user_tag_config['ebound_header_tag']['mobile']['cpm'] = '';
+                    user_tag_config['ebound_header_tag']['mobile']['adsCode'] = '';
+                </script>
+            </div>
+            <!-- top-brands -->
+
             <div class="top-brands">
                 <div class="container">
 
@@ -191,7 +192,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         /
                         <asp:LinkButton ID="meyve" runat="server" CssClass="sebze" OnClick="meyve_Click">Meyveler</asp:LinkButton>
                     </h3>
-
+                    <br />
+                    <div id="divara" runat="server" style="margin-left: 8%" class="w3l_search">
+                        <asp:TextBox ID="txtara" Placeholder="Ürün ara..." runat="server"></asp:TextBox>
+                        <asp:Button ID="btnara" runat="server" BorderStyle="None" CssClass="arama" OnClick="btnara_Click" />
+                    </div>
+                    <br />
                     <!---728x90--->
                     <script src='//publisher.eboundservices.com/dynamicAds/dynamicScript.js'></script>
                     <div style='margin: 0 auto; text-align: center; margin-top: 5px;'>
@@ -258,30 +264,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </div>
 
                                 </ItemTemplate>
-                            </asp:Repeater>  
+                            </asp:Repeater>
                         </div>
                         <br />
                         <div style="overflow: hidden; padding-left: 45%">
-                                <asp:Repeater ID="rptPaging1" OnItemCommand="rptPaging1_ItemCommand" runat="server">
-                                    <ItemTemplate>
+                            <asp:Repeater ID="rptPaging1" OnItemCommand="rptPaging1_ItemCommand" runat="server">
+                                <ItemTemplate>
 
 
 
-                                        <ul class="pagination justify-content-center" style="display: inline-block">
+                                    <ul class="pagination justify-content-center" style="display: inline-block">
 
-                                            <li class="page-item">
-                                                <asp:LinkButton ID="linkpage" Style="color: #fa1818" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
+                                        <li class="page-item">
+                                            <asp:LinkButton ID="linkpage" Style="color: #fa1818" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
                                     <%# Container.DataItem %>
 
-                                                </asp:LinkButton>
-                                            </li>
-                                        </ul>
+                                            </asp:LinkButton>
+                                        </li>
+                                    </ul>
 
-                                    </ItemTemplate>
-                                </asp:Repeater>
-                            </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
                     </div>
-
                     <div class="container">
                         <div class="row">
                             <asp:Repeater ID="rptMeyveler" runat="server" Visible="false">
@@ -324,24 +329,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <br />
                         <div style="overflow: hidden; padding-left: 45%">
-                                <asp:Repeater ID="rptPaging2" OnItemCommand="rptPaging2_ItemCommand" runat="server">
-                                    <ItemTemplate>
+                            <asp:Repeater ID="rptPaging2" OnItemCommand="rptPaging2_ItemCommand" runat="server">
+                                <ItemTemplate>
 
 
 
-                                        <ul class="pagination justify-content-center" style="display: inline-block">
+                                    <ul class="pagination justify-content-center" style="display: inline-block">
 
-                                            <li class="page-item">
-                                                <asp:LinkButton ID="linkpage" Style="color: #fa1818" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
+                                        <li class="page-item">
+                                            <asp:LinkButton ID="linkpage" Style="color: #fa1818" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
                                     <%# Container.DataItem %>
 
-                                                </asp:LinkButton>
-                                            </li>
-                                        </ul>
+                                            </asp:LinkButton>
+                                        </li>
+                                    </ul>
 
-                                    </ItemTemplate>
-                                </asp:Repeater>
-                            </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
                     </div>
                     <div class="container">
                         <div class="row">
@@ -385,24 +390,87 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <br />
                         <div style="overflow: hidden; padding-left: 45%">
-                                <asp:Repeater ID="rptPaging3" OnItemCommand="rptPaging3_ItemCommand" runat="server">
-                                    <ItemTemplate>
+                            <asp:Repeater ID="rptPaging3" OnItemCommand="rptPaging3_ItemCommand" runat="server">
+                                <ItemTemplate>
 
 
 
-                                        <ul class="pagination justify-content-center" style="display: inline-block">
+                                    <ul class="pagination justify-content-center" style="display: inline-block">
 
-                                            <li class="page-item">
-                                                <asp:LinkButton ID="linkpage" Style="color: #fa1818" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
+                                        <li class="page-item">
+                                            <asp:LinkButton ID="linkpage" Style="color: #fa1818" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
                                     <%# Container.DataItem %>
 
-                                                </asp:LinkButton>
-                                            </li>
-                                        </ul>
+                                            </asp:LinkButton>
+                                        </li>
+                                    </ul>
 
-                                    </ItemTemplate>
-                                </asp:Repeater>
-                            </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <asp:Repeater ID="rptAra" runat="server" Visible="false">
+                                <ItemTemplate>
+
+                                    <div class="agile_top_brands_grids col-md-3">
+                                        <div class="top_brand_left">
+                                            <div class="hover14 column">
+                                                <div class="agile_top_brand_left_grid">
+
+                                                    <div class="agile_top_brand_left_grid1">
+                                                        <figure>
+                                                            <div class="snipcart-item block">
+                                                                <div class="snipcart-thumb">
+
+                                                                    <img style="margin-left: 13%; width: 140px; height: 140px;" src='<%#Eval("resimYolu")%>' /></a>
+                                                        <p style="text-align: center"><%#Eval("urunAdi")%></p>
+                                                                    <h4 style="text-align: center"><%#Eval("fiyat") %> &nbsp<i class="fa fa-turkish-lira"></i> </h4>
+                                                                    <asp:TextBox ID="txtkackilo" BorderStyle="None" Style="font-size: 11pt; width: 18%; text-align: center; margin-left: 33%;" runat="server" TextMode="Number" Text="1" ReadOnly="False"></asp:TextBox>&nbsp;<asp:TextBox ID="txtsatilmasekli" ReadOnly="true" Font-Size="11pt" Style="font: initial; width: 15%" runat="server" Text='<%#Eval("satilmaSekli") %>' BorderStyle="None"></asp:TextBox>
+                                                                </div>
+                                                                <div class="snipcart-details top_brand_home_details">
+
+                                                                    <fieldset>
+                                                                        <asp:Button ID="btnEkle" runat="server" Text="Sepete Ekle" CssClass="button" OnClick="btnEkle_Click" CommandArgument='<%#Eval("id")%>' />
+                                                                        <asp:Label ID="lblresimyolu" runat="server" Text='<%#Eval("resimYolu")%>' Visible="false"></asp:Label>
+                                                                        <asp:Label ID="lblurunadi" runat="server" Text='<%#Eval("urunAdi")%>' Visible="false"></asp:Label>
+                                                                        <asp:Label ID="lblfiyat" runat="server" Text='<%#Eval("fiyat")%>' Visible="false"></asp:Label>
+                                                                    </fieldset>
+
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                        <br />
+                        <div style="overflow: hidden; padding-left: 45%">
+                            <asp:Repeater ID="rptPaging4" OnItemCommand="rptPaging4_ItemCommand" runat="server">
+                                <ItemTemplate>
+
+
+
+                                    <ul class="pagination justify-content-center" style="display: inline-block">
+
+                                        <li class="page-item">
+                                            <asp:LinkButton ID="linkpage" Style="color: #fa1818" CssClass="page-link" runat="server" CommandName="Page" CommandArgument="<%#Container.DataItem %>">
+                                    <%# Container.DataItem %>
+
+                                            </asp:LinkButton>
+                                        </li>
+                                    </ul>
+
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
                     </div>
 
                 </div>

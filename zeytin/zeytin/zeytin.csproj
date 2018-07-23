@@ -221,11 +221,14 @@
     <Content Include="images\close_1.png" />
     <Content Include="images\dereotu.jpg" />
     <Content Include="images\dolmabiber.jpg" />
-    <Content Include="images\domates.png" />
+    <Content Include="images\domates.jpg" />
     <Content Include="images\elma.png" />
     <Content Include="images\fasulye.jpg" />
     <Content Include="images\gobeklimarul.jpg" />
+    <Content Include="images\goldenapple.jpg" />
+    <Content Include="images\grannyapple.jpg" />
     <Content Include="images\havuc.jpg" />
+    <Content Include="images\img-ara.png" />
     <Content Include="images\img-sp.png" />
     <Content Include="images\incir.png" />
     <Content Include="images\kabak.jpg" />
