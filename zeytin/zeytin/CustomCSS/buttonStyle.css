@@ -12,6 +12,24 @@
         background-color: #FA1818;
         cursor: pointer;
     }
+.linkbtn2 {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    background-color: white;
+    border-color: #84C639;
+    color: red;
+    width: 90%;
+    height: 40px;
+    
+}
+
+    .linkbtn2:hover {
+        background-color: white;
+        cursor: pointer;
+        color:green;
+        text-decoration:underline;
+    }
    .button:hover{
        cursor:pointer;
    }

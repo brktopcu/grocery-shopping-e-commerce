@@ -17,6 +17,7 @@ namespace zeytin
             lblmesaj.Visible = false;
             if (!Page.IsPostBack)
             {
+                int aktifMi=0;
                 try
                 {
                     SqlConnection conn = new SqlConnection();
@@ -34,9 +35,19 @@ namespace zeytin
                         txttel.Text = dr[3].ToString();
                         txtparola.Text = dr[4].ToString();
                         txtadres.Text = dr[5].ToString();
+                        aktifMi = Convert.ToInt32(dr[6]);
                     }
                     dr.Close();
                     conn.Close();
+                    if (aktifMi == 0)
+                    {
+                        btnaktif.Visible = true;
+
+                    }
+                    else
+                    {
+                        btnaktif.Visible = false;
+                    }
                 }
                 catch (Exception)
                 {
@@ -84,6 +95,11 @@ namespace zeytin
         protected void txtad_TextChanged(object sender, EventArgs e)
         {
           
+        }
+
+        protected void btnaktif_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("aktive.aspx");
         }
     }
 }

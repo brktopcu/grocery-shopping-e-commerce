@@ -71,37 +71,49 @@ namespace zeytin
                     cmd1.Connection = conn;
                     cmd3.Connection = conn;
 
-                    cmd2.CommandText = "select id from Kullanicilar where ePosta ='" + Session["Kullanici"] + "'";
+                    cmd2.CommandText = "select id,aktifMi from Kullanicilar where ePosta ='" + Session["Kullanici"] + "'";
                     DataSet ds = new DataSet();
                     SqlDataAdapter da = new SqlDataAdapter(cmd2);
                     da.Fill(ds);
                     int kullaniciID = Convert.ToInt32(ds.Tables[0].Rows[0]["id"]);
-                    cmd1.CommandText = "Insert into Siparis(kullaniciID,siparisTarihi,toplamFiyat,iletildiMi) values (@kullaniciID,@siparisTarihi,@toplamFiyat,0)";
-                    SqlDataAdapter da2 = new SqlDataAdapter(cmd1);
-                    cmd1.Parameters.AddWithValue("@kullaniciID", kullaniciID);
-                    cmd1.Parameters.AddWithValue("@siparisTarihi", DateTime.Today.ToShortDateString());
-                    cmd1.Parameters.AddWithValue("@toplamFiyat", index.sepetim.AnaToplam);
-                    cmd1.ExecuteNonQuery();
-                    cmd3.CommandText = "SELECT TOP 1 id FROM Siparis ORDER BY id DESC";
-                    DataSet ds2 = new DataSet();
-                    SqlDataAdapter da3 = new SqlDataAdapter(cmd3);
-                    da3.Fill(ds2);
-                    int sonSiparisID = Convert.ToInt32(ds2.Tables[0].Rows[0]["id"]);
-
-                    foreach (sepetUrunler item in index.sepetim.Urunler)
+                    int aktifMi = Convert.ToInt32(ds.Tables[0].Rows[0]["aktifMi"]);
+                    if (aktifMi==1)
                     {
-                        SqlCommand cmd4 = new SqlCommand();
-                        cmd4.Connection = conn;
-                        cmd4.CommandText = "Insert into SiparisDetayi(siparisID,urunID,urunFiyat,adet) values (@siparisID,@urunID,@urunFiyat,@adet)";
-                        cmd4.Parameters.AddWithValue("@siparisID", sonSiparisID);
-                        cmd4.Parameters.AddWithValue("@urunID", item.ID);
-                        cmd4.Parameters.AddWithValue("@urunFiyat", item.Fiyat);
-                        cmd4.Parameters.AddWithValue("@adet", item.KacKilo);
-                        cmd4.ExecuteNonQuery();
-                    }
+                        cmd1.CommandText = "Insert into Siparis(kullaniciID,siparisTarihi,toplamFiyat,iletildiMi) values (@kullaniciID,@siparisTarihi,@toplamFiyat,0)";
+                        SqlDataAdapter da2 = new SqlDataAdapter(cmd1);
+                        cmd1.Parameters.AddWithValue("@kullaniciID", kullaniciID);
+                        cmd1.Parameters.AddWithValue("@siparisTarihi", DateTime.Today.ToShortDateString());
+                        cmd1.Parameters.AddWithValue("@toplamFiyat", index.sepetim.AnaToplam);
+                        cmd1.ExecuteNonQuery();
+                        cmd3.CommandText = "SELECT TOP 1 id FROM Siparis ORDER BY id DESC";
+                        DataSet ds2 = new DataSet();
+                        SqlDataAdapter da3 = new SqlDataAdapter(cmd3);
+                        da3.Fill(ds2);
+                        int sonSiparisID = Convert.ToInt32(ds2.Tables[0].Rows[0]["id"]);
 
-                    index.sepetim.Urunler.Clear();
-                    lblmesaj.Visible = true;
+                        foreach (sepetUrunler item in index.sepetim.Urunler)
+                        {
+                            SqlCommand cmd4 = new SqlCommand();
+                            cmd4.Connection = conn;
+                            cmd4.CommandText = "Insert into SiparisDetayi(siparisID,urunID,urunFiyat,adet) values (@siparisID,@urunID,@urunFiyat,@adet)";
+                            cmd4.Parameters.AddWithValue("@siparisID", sonSiparisID);
+                            cmd4.Parameters.AddWithValue("@urunID", item.ID);
+                            cmd4.Parameters.AddWithValue("@urunFiyat", item.Fiyat);
+                            cmd4.Parameters.AddWithValue("@adet", item.KacKilo);
+                            cmd4.ExecuteNonQuery();
+                        }
+
+                        index.sepetim.Urunler.Clear();
+                        lblmesaj.Visible = true;
+                    }
+                    else
+                    {
+                        lblmesaj.Text ="Hesabınız aktif değil.Lütfen gönderdiğimiz mail'i takip ederek hesabınızı aktifleştiriniz.";
+                        lblmesaj.Visible = true;
+                        lblmesaj.ForeColor = Color.Red;
+                        divmesaj.Style.Add("text-align", "center");
+                    }
+                    
                 }
                 else
                 {

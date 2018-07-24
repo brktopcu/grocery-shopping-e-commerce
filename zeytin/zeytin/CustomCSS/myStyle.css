@@ -208,12 +208,12 @@ ul.dropdown-menu.drp-mnu {
 }
 
     .w3ls_logo_products_left h1 a {
-        font-size: 1.5em;
+        font-size: 1.4em;
         color: #212121;
         text-decoration: none;
         text-transform: uppercase;
         display: block;
-        background: url(../images/img-sp.png) no-repeat 54px 6px;
+        background: url(../images/img-sp.png) no-repeat 70px 10px;
         line-height: 1;
         height: 97px;
     }
@@ -226,7 +226,7 @@ ul.dropdown-menu.drp-mnu {
 }
 
 .w3ls_logo_products_left h1 a span {
-    font-size: .3em;
+    font-size: .4em;
     display: block;
     color: #FA1818;
 }
