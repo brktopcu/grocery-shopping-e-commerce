@@ -18,7 +18,8 @@ namespace zeytin
             conn.ConnectionString = ConfigurationManager.ConnectionStrings["Connection"].ConnectionString;
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "Select * from Tarifler where id=1";
+            cmd.CommandText = "Select * from Tarifler where id=@tarifid";
+            cmd.Parameters.AddWithValue("@tarifid",ConfigurationManager.AppSettings["tarifid"]);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             da.Fill(ds);

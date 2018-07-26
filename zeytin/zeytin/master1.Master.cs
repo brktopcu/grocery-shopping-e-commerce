@@ -21,8 +21,15 @@ namespace zeytin
                 GirisYapBtn.HRef = "profilim.aspx";
                 KaydolBtn.InnerText = "Çıkış";   
                 KaydolBtn.HRef = "/cikis.aspx";
-                
+                lisiparislerim.Visible = true;
+                divlogo.Style.Add("max-width", "15%");
+
                 divbtn.Style.Add("margin-left","6%");
+                
+            }
+            else
+            {
+                lisiparislerim.Visible = false;
                 
             }
             if (Session["Admin"]!=null)

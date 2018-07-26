@@ -123,12 +123,13 @@
     </script>
     <div class="logo_products">
         <div class="container">
-            <div class="w3ls_logo_products_left">
+            <div id="divlogo" runat="server" class="w3ls_logo_products_left">
                 <h1><a href="index.aspx"><span>Bİzİm</span>Manav</a></h1>
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
                     <li><a href="index.aspx">Ana Sayfa</a><i>/</i></li>
+                    <li id="lisiparislerim" runat="server"><a href="siparislerim.aspx">Siparişlerim</a><i>/</i></li>
                     <li><a href="Hizmetler.aspx">Hizmetler</a><i>/</i></li>
                     <li><a href="Hakkimizda.aspx">Hakkımızda</a></li>
                     <li><i class="fa fa-phone" aria-hidden="true"></i>(536) 234 567</li>

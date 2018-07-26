@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin.aspx" />
+    <Content Include="siparislerim.aspx" />
     <Content Include="tarifEkle.aspx" />
     <Content Include="urunEkle.aspx" />
     <Content Include="aktive.aspx" />
@@ -325,6 +326,13 @@
     </Compile>
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="siparislerim.aspx.cs">
+      <DependentUpon>siparislerim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siparislerim.aspx.designer.cs">
+      <DependentUpon>siparislerim.aspx</DependentUpon>
     </Compile>
     <Compile Include="tarifEkle.aspx.cs">
       <DependentUpon>tarifEkle.aspx</DependentUpon>

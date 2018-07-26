@@ -10,60 +10,42 @@
 namespace zeytin {
     
     
-    public partial class Master {
+    public partial class siparislerim {
         
         /// <summary>
-        /// divbtn control.
+        /// admin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divbtn;
+        protected global::System.Web.UI.HtmlControls.HtmlForm admin;
         
         /// <summary>
-        /// GirisYapBtn control.
+        /// grdSiparisler control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor GirisYapBtn;
+        protected global::System.Web.UI.WebControls.GridView grdSiparisler;
         
         /// <summary>
-        /// KaydolBtn control.
+        /// rptsepet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor KaydolBtn;
+        protected global::System.Web.UI.WebControls.Repeater rptsepet;
         
         /// <summary>
-        /// divlogo control.
+        /// toplam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divlogo;
-        
-        /// <summary>
-        /// lisiparislerim control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lisiparislerim;
-        
-        /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl toplam;
     }
 }
