@@ -10,25 +10,25 @@
 namespace zeytin {
     
     
-    public partial class tarif {
+    public partial class tarifEkle {
         
         /// <summary>
-        /// tarifForm control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm tarifForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// lbltarifadi control.
+        /// txttarifadi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbltarifadi;
+        protected global::System.Web.UI.WebControls.TextBox txttarifadi;
         
         /// <summary>
         /// txtmalzemeler control.
@@ -40,15 +40,6 @@ namespace zeytin {
         protected global::System.Web.UI.WebControls.TextBox txtmalzemeler;
         
         /// <summary>
-        /// imgtarifResmi control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgtarifResmi;
-        
-        /// <summary>
         /// txtyapilisi control.
         /// </summary>
         /// <remarks>
@@ -56,5 +47,32 @@ namespace zeytin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtyapilisi;
+        
+        /// <summary>
+        /// fuptarifresmi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fuptarifresmi;
+        
+        /// <summary>
+        /// btntarifekle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btntarifekle;
+        
+        /// <summary>
+        /// lblmesaj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblmesaj;
     }
 }

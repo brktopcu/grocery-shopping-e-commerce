@@ -21,13 +21,13 @@
                 <div class="container">
                     <div style="margin-left: 2%" class="row">
                         <div class="col-md-6">
-                            <asp:Button ID="urunEkle" CssClass="linkbtn" runat="server" Text="Ürün Ekle" />
+                            <asp:Button ID="urunEkle" CssClass="linkbtn" runat="server" Text="Ürün Ekle" OnClick="urunEkle_Click" />
 
                         </div>
                         <br />
                         <br />
                         <div class="col-md-6">
-                            <asp:Button ID="tarifEkle" CssClass="linkbtn" runat="server" Text="Tarif Ekle" />
+                            <asp:Button ID="tarifEkle" CssClass="linkbtn" runat="server" Text="Tarif Ekle" OnClick="tarifEkle_Click" />
 
                         </div>
                         <br />
@@ -47,11 +47,11 @@
                                 <asp:BoundField DataField="ePosta" HeaderText="E-Posta" ReadOnly="True" />
                                 <asp:BoundField DataField="adres" HeaderText="Adres" ReadOnly="True" />
                                 <asp:BoundField DataField="siparisTarihi" HeaderText="Sipariş Tarihi" />
-                                <asp:ButtonField ButtonType="Button" HeaderText="Sipariş Detayını Gör" Text="Sipariş Detayı" CommandName="detay" ControlStyle-CssClass="linkbtn" >
-<ControlStyle CssClass="linkbtn"></ControlStyle>
+                                <asp:ButtonField ButtonType="Button" HeaderText="Sipariş Detayını Gör" Text="Sipariş Detayı" CommandName="detay" ControlStyle-CssClass="linkbtn">
+                                    <ControlStyle CssClass="linkbtn"></ControlStyle>
                                 </asp:ButtonField>
-                                <asp:ButtonField ButtonType="Button" CommandName="iletildi" Text="İletildi" ControlStyle-CssClass="linkbtn" HeaderText="İletildi Mi" >
-<ControlStyle CssClass="linkbtn"></ControlStyle>
+                                <asp:ButtonField ButtonType="Button" CommandName="iletildi" Text="İletildi" ControlStyle-CssClass="linkbtn" HeaderText="İletildi Mi">
+                                    <ControlStyle CssClass="linkbtn"></ControlStyle>
                                 </asp:ButtonField>
                             </Columns>
                             <FooterStyle BackColor="#CCCCCC" />

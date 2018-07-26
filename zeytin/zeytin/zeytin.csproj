@@ -78,6 +78,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin.aspx" />
+    <Content Include="tarifEkle.aspx" />
+    <Content Include="urunEkle.aspx" />
     <Content Include="aktive.aspx" />
     <Content Include="cikis.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -323,6 +325,20 @@
     </Compile>
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tarifEkle.aspx.cs">
+      <DependentUpon>tarifEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tarifEkle.aspx.designer.cs">
+      <DependentUpon>tarifEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="urunEkle.aspx.cs">
+      <DependentUpon>urunEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="urunEkle.aspx.designer.cs">
+      <DependentUpon>urunEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="aktive.aspx.cs">
       <DependentUpon>aktive.aspx</DependentUpon>

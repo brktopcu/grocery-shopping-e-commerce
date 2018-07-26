@@ -84,6 +84,14 @@ namespace zeytin
             }
         }
 
-       
+        protected void urunEkle_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("urunEkle.aspx");
+        }
+
+        protected void tarifEkle_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("tarifEkle.aspx");
+        }
     }
 }
