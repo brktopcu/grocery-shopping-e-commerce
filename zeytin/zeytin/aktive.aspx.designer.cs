@@ -22,22 +22,22 @@ namespace zeytin {
         protected global::System.Web.UI.HtmlControls.HtmlForm aktivasyonForm;
         
         /// <summary>
-        /// aktivasyon control.
+        /// txtaktivasyon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox aktivasyon;
+        protected global::System.Web.UI.WebControls.TextBox txtaktivasyon;
         
         /// <summary>
-        /// aktivasyonGonder control.
+        /// btnaktivasyonGonder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aktivasyonGonder;
+        protected global::System.Web.UI.WebControls.Button btnaktivasyonGonder;
         
         /// <summary>
         /// lblAktivasyon control.

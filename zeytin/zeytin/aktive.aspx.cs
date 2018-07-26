@@ -18,6 +18,10 @@ namespace zeytin
         protected void Page_Load(object sender, EventArgs e)
         {
             lblAktivasyon.Visible = false;
+            if (Session["Kullanici"]==null)
+            {
+                Response.Redirect("index.aspx");
+            }
         }
 
         protected void aktivasyonGonder_Click(object sender, EventArgs e)
@@ -28,32 +32,46 @@ namespace zeytin
             SqlCommand cmd = new SqlCommand();
             
             conn.Open();
-            cmd.CommandText = "Select COUNT(1) from Kullanicilar k where k.aktiveKodu = @aktiveKodu";
-            cmd.Parameters.AddWithValue("@aktiveKodu", aktivasyon.Text);
+            cmd.CommandText = "select aktiveKodu,aktifMi from Kullanicilar where ePosta = @ePosta";
+            cmd.Parameters.AddWithValue("@ePosta",Session["Kullanici"]);
             cmd.Connection = conn;
-            int sayi = Convert.ToInt32(cmd.ExecuteScalar());
-
-            if (sayi>=1)
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            string aktifMi = ds.Tables[0].Rows[0]["aktifMi"].ToString();
+            string aktiveKodu = ds.Tables[0].Rows[0]["aktiveKodu"].ToString();
+            if (aktifMi=="1")
             {
                 lblAktivasyon.Visible = true;
-                lblAktivasyon.Text = "Aktivasyon işlemi başarılı.";
-                lblAktivasyon.ForeColor = System.Drawing.Color.Green;
-
-                SqlCommand cmd2 = new SqlCommand();
-                cmd2.CommandText = "update Kullanicilar set aktifMi = 1 where aktiveKodu = @aktiveKodu";
-                cmd2.Parameters.AddWithValue("@aktiveKodu", aktivasyon.Text);
-                cmd2.Connection = conn;
-                cmd2.ExecuteNonQuery();
-
+                lblAktivasyon.Text = "Hesabınız zaten aktif konumda.";
+                lblAktivasyon.ForeColor = System.Drawing.Color.Red;
             }
-
             else
             {
-                lblAktivasyon.Visible = true;
-                lblAktivasyon.Text = "Aktivasyon işlemi başarısız.";
-                lblAktivasyon.ForeColor = System.Drawing.Color.Red;
+                if (aktiveKodu == txtaktivasyon.Text)
+                {
 
+                    SqlCommand cmd2 = new SqlCommand();
+                    cmd2.CommandText = "update Kullanicilar set aktifMi = 1 where ePosta = @ePosta";
+                    cmd2.Parameters.AddWithValue("@ePosta", Session["Kullanici"]);
+                    cmd2.Connection = conn;
+                    cmd2.ExecuteNonQuery();
+                    lblAktivasyon.Visible = true;
+                    lblAktivasyon.Text = "Aktivasyon işlemi başarılı.";
+                    lblAktivasyon.ForeColor = System.Drawing.Color.Green;
+
+
+                }
+
+                else
+                {
+                    lblAktivasyon.Visible = true;
+                    lblAktivasyon.Text = "Aktivasyon kodunu yanlış girdiniz.Lütfen tekrar deneyin.";
+                    lblAktivasyon.ForeColor = System.Drawing.Color.Red;
+
+                }
             }
+            
             
            
 

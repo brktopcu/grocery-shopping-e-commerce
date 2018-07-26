@@ -10,14 +10,17 @@
                     <h3>Lütfen aktivasyon kodunu girin:</h3>
                 </div>
                 <div class="col-md-3">
-                    <asp:TextBox ID="aktivasyon" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtaktivasyon" runat="server"></asp:TextBox>
                 </div>
-                  <div class="col-md-3">
-                      <asp:Button ID="aktivasyonGonder" runat="server" Text="Gönder" CssClass="btn" OnClick="aktivasyonGonder_Click" />
+                <div class="col-md-3">
+                    <asp:Button ID="btnaktivasyonGonder" runat="server" Text="Gönder" CssClass="btn" OnClick="aktivasyonGonder_Click" />
                 </div>
             </div>
             <br />
-            <asp:Label ID="lblAktivasyon" runat="server" Visible="false"></asp:Label>
+            <br />
+            <div style="text-align:center">
+                <asp:Label ID="lblAktivasyon" runat="server" Visible="false" Font-Size="X-Large"></asp:Label>
+            </div>
             <br />
             <br />
         </div>
